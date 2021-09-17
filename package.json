@@ -1,0 +1,26 @@
+{
+    "name": "diejma-ssd",
+    "version": "1.0.0",
+    "description": "Desarrollo de tienda virtual shopping",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yego0210/DIEJMA-SSD.git"
+    },
+    "keywords": [],
+    "author": "Diego Trujillo, Hilca, Ever, Wilmer, jhon",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yego0210/DIEJMA-SSD/issues"
+    },
+    "homepage": "https://github.com/yego0210/DIEJMA-SSD#readme",
+    "dependencies": {
+        "bootstrap": "^5.1.1",
+        "bootstrap-icons": "^1.5.0",
+        "nodemon": "^2.0.12",
+        "sass": "^1.41.1"
+    }
+}
