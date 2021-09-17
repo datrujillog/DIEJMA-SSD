@@ -7,41 +7,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="tienda de comercio electronico,ecomerce" />
     <title>Shopping & DIEJMA SSD</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- menu style -->
+
     <!-- logo -->
     <link rel="icon" href="/Img/icono/icon.png" />
     <!-- npm Booststarp -->
     <link rel="stylesheet" type="text/css" media="all" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <!-- iconos Booststarp -->
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
-    <!-- script -->
-    <script>
-        addEventListener(
-            "load",
-            function() {
-                setTimeout(hideURLbar, 0);
-            },
-            false
-        );
+    <!-- font-awesome icons -->
+    <link href="/css/font-awesome.css" rel="stylesheet" />
+    <!-- //font-awesome icons -->
 
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
 </head>
 
 <body>
     <!-- ******************** HEADER ******************** -->
-    <!-- top-header -->
-    <div>
-        <div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla numquam dolore nam, vitae odit corrupti ipsum vero possimus dolorum, rem amet eaque illo recusandae eos similique eligendi ad facilis!</p>
-
+    <header class="container-fluid contenedor-uno">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <div>
+                    <p class="pt-2">HASTA $ 50 DE DESCUENTO EN PORTÁTILES | USAR CÓDIGO DE CUPÓN LAPPY</p>
+                </div>
             </div>
 
+            <div class="col-sm-12 col-lg-6">
+                <nav class="nav justify-content-center">
+                    <a class="nav-link active" href="#"><i class="bi bi-person"></i> Mi cuenta</a>
+                    <a class="nav-link" href="#"><i class="bi bi-percent"></i> Descuentos</a>
+                    <a class="nav-link mini " href="#"><i class="bi bi-credit-card"></i> Tarjeta de crédito</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- DESDE AQUI -->
+    <!-- logos -->
+    <header class="container contenedor-dos ">
+
+
+
+
+        <div class="row ">
+
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 text-sm-center   text-xs-center ">
+                <div class="imm">
+                    <a href=""><img src="/Img/icono/icon.png" alt=""></a>
+
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-5 mt-sm-3 mt-lg-3   mt-3 buscar">
+                <div class=" ">
+                    <form action="#" method="post">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary lupa" type="button" id="button-addon2"><i class="bi bi-search lupaa "></i></button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <!-- ================================ -->
+
+            <div class="col-xs-12 col-sm-4 col-sm-1 text-sm-center conte-contac">
+                <div class="">
+                    <div class="contenedor-contac">
+                        <div class="contac2">
+
+                            <!-- ******************** MODAL CARRITO ******************** -->
+                            <!-- btn-danger -->
+                            <button type="button" class="btn   btn-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="bi bi-cart-check-fill" aria-hidden="true"></i> 
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ******************** FIN CODIGO ******************** -->
+
+                        </div>
+                        <div class="raya">|</div>
+
+
+                        <div class="contac2">
+                            <a class="contac44" href="#"><i class="bi bi-geo-alt-fill ubi"></i> Contactos</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
+    </header>
+    <!-- ******************** barra de navegacion ******************** -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 ">
+        <div class="container-fluid navbar ">
+            <a class="navbar-brand nav-colo" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-colo" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias de la tienda
+                </a>
+                        <ul class="dropdown-menu sub-lista" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-colo-dos" href="#">Action</a></li>
+                            <li><a class="dropdown-item nav-colo-dos" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item nav-colo-dos" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled nav-colo">Shopping</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- ******************** FIN CODIGO ******************** -->
+
+
+    <!-- ******************** FIN CODIGO ******************** -->
+
+
+
+
+
+
+    <!-- ******************** Footer ******************** -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- contenedor contac-home -->
+                <div class="col contac-home mt-5 ">
+
+
+                    <!-- imagen -->
+                    <div class="col">
+                        <div class="conta-img">
+                            <img src="/Img/icono/icon.png" alt="">
+                        </div>
+                    </div>
+                    <!-- direciin -->
+                    <hr>
+                    <div class="col">
+                        <span>Medellin colombia</span>
+                    </div>
+
+                    <!-- celular -->
+                    <hr>
+                    <div class="col">
+                        <span>555 555 5555</span>
+                    </div>
+                    <!-- Whatsapp -->
+                    <hr>
+                    <div class="col">
+                        <span>444 444 4444</span>
+                    </div>
+                    <!-- correo -->
+                    <hr>
+                    <div class="col">
+                        <span>shopping@shopping.com</span>
+                    </div>
+
+
+                </div>
+                <!-- === aqui termina -->
+
+                <!--  -->
+                <!--  -->
+
+                <!-- el Empresa -->
+                <div class="col servicios mt-5 empresa">
+                    <h4>Empresa</h4>
+                    <h6>Sobre nosotros</h6>
+                    <h6>Productos o catalogos</h6>
+                    <h6>Ayuda</h6>
+                    <h6>Contactenos</h6>
+
+                </div>
+                <!-- servicios -->
+                <div class="col mt-5">
+                    <h4>Sevicios</h4>
+                    <h6>Devoluciones</h6>
+                    <h6>Preguntas mas frecuentes</h6>
+                    <h6>mapa del sitio</h6>
+                    <h6>estado de orden</h6>
+
+                </div>
+                <!-- metodo de pago -->
+                <div class="col mt-5">
+                    <h4>Metodos de pago</h4>
+                    <h6>Banca neta</h6>
+                    <h6>Contra reembolso</h6>
+                    <h6>Comversiòn EMI</h6>
+                    <h6>Cipon de regalo electronico</h6>
+                    <h6>Targeta de crèdito dèbito</h6>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="pie">
+        <p>Todos los derechos reservados </p>
     </div>
+
+
 
     <!-- ******************** FIN CODIGO ******************** -->
     <!-- script Bootstrap -->

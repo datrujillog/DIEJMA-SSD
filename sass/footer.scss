@@ -1,0 +1,24 @@
+@import "./variables";
+footer {
+    color: $color-segundo;
+    background-color: $color-tercero;
+    margin-top: 800px;
+    .contac-home {
+        background-color: $color-quinto;
+        color: $color-primero;
+        margin-left: 100px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+    .empresa {
+        margin-left: 50px;
+    }
+}
+
+.pie {
+    background-color: $color-primero;
+    height: 70px;
+    color: $color-segundo;
+    text-align: center;
+    padding-top: 30px;
+}

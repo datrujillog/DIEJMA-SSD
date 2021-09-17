@@ -1,0 +1,116 @@
+@import "./variables";
+.contenedor-uno {
+    background-color: $color-primero;
+    p {
+        font-size: 12px;
+        color: $color-segundo;
+        font-weight: 600;
+    }
+    a {
+        color: $color-segundo;
+        co {
+            color: $color-segundo;
+        }
+    }
+    a:hover {
+        color: $color-cuarto;
+    }
+    @media (max-width: 986px) {
+        p {
+            text-align: center;
+            margin: -5%px;
+        }
+    }
+}
+
+.contenedor-dos {
+    margin-top: 60px;
+    div {
+        a {
+            img {
+                width: 230px;
+            }
+        }
+    }
+    .buscar {
+        // margin-right: 100px;
+        // width: 100%;
+        input {
+            height: 48px;
+        }
+    }
+    .lupa {
+        background-color: $color-cuarto;
+        width: 60px;
+    }
+    .lupa:hover {
+        background-color: $color-tercero;
+    }
+    .lupaa {
+        color: $color-segundo;
+        font-weight: 900;
+    }
+    .conte-contac {
+        .contenedor-contac {
+            display: flex;
+            .contac2 {
+                .btn-carrito {
+                    font-size: 30px;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50px;
+                    margin-right: 20px;
+                    color: $color-segundo;
+                    background-color: $color-tercero;
+                    i {
+                        height: 80px;
+                    }
+                }
+            }
+            .btn-carrito:hover {
+                background-color: $color-cuarto;
+            }
+            .raya {
+                background-color: $color-primero;
+                height: 70px;
+            }
+            .contac2 {
+                margin-left: 20px;
+                margin-top: 15px;
+                a {
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: $color-primero;
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .conte-contac {
+            margin-right: 100pxx;
+        }
+        .imm {
+            text-align: center;
+        }
+    }
+    @media (max-width: 100px) {
+        .contac2 {
+            order: -2;
+        }
+    }
+}
+
+// barra de navegacion
+.navbar {
+    background-color: $color-tercero;
+    // background-color: rgb(4, 109, 206);
+    .nav-colo {
+        color: $color-segundo !important;
+    }
+    .sub-lista {
+        background-color: $color-quinto;
+    }
+    .nav-colo-dos {
+        color: $color-primero;
+    }
+}
