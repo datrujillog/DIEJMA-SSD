@@ -1,3 +1,32 @@
+.btn-subir {
+  position: absolute;
+  right: 50px;
+  top: 1000px;
+}
+.btn-subir .bbb {
+  height: 55px;
+  width: 55px;
+  border-radius: 30px;
+  border: none;
+  font-size: 30px;
+  background-color: #d9a138;
+  color: #ebebeb;
+}
+.btn-subir .bbb:hover {
+  background-color: #254382;
+}
+.btn-subir .ir-arriba {
+  display: none;
+  padding: 20px;
+  background: #024959;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 footer {
   color: #F3F3F3;
   background-color: #254382;
@@ -26,11 +55,25 @@ footer .pago {
 footer .pago h6 {
   font-size: 15px;
 }
+footer .pago h6 i {
+  color: #d9a138;
+}
 footer .servicios {
   text-align: left;
 }
 footer .servicios h6 {
   font-size: 15px;
+}
+footer h4 {
+  color: #d9a138;
+}
+footer figure {
+  position: absolute;
+  left: 170px;
+  top: 1260px;
+}
+footer figure img {
+  width: 80%;
 }
 
 .pie {
