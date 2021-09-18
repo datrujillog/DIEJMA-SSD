@@ -9,9 +9,28 @@ footer .contac-home {
   margin-left: 100px;
   margin-bottom: 30px;
   padding-bottom: 20px;
+  border: 5px solid #d9a138;
+  border-radius: 15px;
 }
 footer .empresa {
   margin-left: 50px;
+  font-size: 15px;
+}
+footer a {
+  text-decoration: none;
+  color: #F3F3F3;
+}
+footer .pago {
+  text-align: left;
+}
+footer .pago h6 {
+  font-size: 15px;
+}
+footer .servicios {
+  text-align: left;
+}
+footer .servicios h6 {
+  font-size: 15px;
 }
 
 .pie {
