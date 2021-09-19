@@ -1,7 +1,7 @@
     @import "./variables";
     // boton subir
     .btn-subir {
-        position: fixed;
+        position: absolute;
         right: 50px;
         top: 1000px;
         .bbb {
@@ -15,6 +15,7 @@
         }
         .bbb:hover {
             background-color: $color-tercero;
+            animation: $animacion-icono; // animation: icono .5s ease;
         }
         .ir-arriba {
             display: none;
