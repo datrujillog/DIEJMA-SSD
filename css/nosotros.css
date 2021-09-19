@@ -1,0 +1,9 @@
+.migas a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+
+.migas a:hover {
+    color: rgb(37, 67, 130) !important;
+    font-weight: 600;
+}

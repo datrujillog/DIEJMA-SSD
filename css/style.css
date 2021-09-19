@@ -1,3 +1,8 @@
+header {
+  background-color: #f3f3f3;
+  padding: 0px;
+}
+
 .contenedor-uno {
   background-color: #464646;
 }
@@ -101,6 +106,139 @@
 }
 .navbar .nav-colo-dos {
   color: #464646;
+}
+
+.container-portada {
+  width: 100%;
+  height: 580px;
+  position: relative;
+  background-image: url(../Img/carrusel/5.jpg);
+  background-size: 200%;
+  animation: movimiento 20s infinite linear alternate;
+}
+
+.container-portadaa {
+  width: 100%;
+  height: 580px;
+  position: relative;
+  background-image: url(../Img/carrusel/8.jpg);
+  background-size: 200%;
+  animation: movimiento 20s infinite linear alternate;
+}
+
+.container-portadaaa {
+  width: 100%;
+  height: 580px;
+  position: relative;
+  background-image: url(../Img/carrusel/3.jpg);
+  background-size: 200%;
+  animation: movimiento 20s infinite linear alternate;
+}
+
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+.capa-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: -webkit-linear-gradient(left, black, #0672d0);
+  opacity: 0.5;
+}
+
+.container-details {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+.details {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  top: 80px;
+  color: #F3F3F3;
+}
+
+.rebajasuno {
+  margin-left: 400px;
+}
+
+.rebajasdos {
+  margin-left: 650px;
+}
+
+.descuentotres {
+  margin-left: 650px !important;
+}
+
+.details h1 {
+  font-size: 40px;
+  font-weight: 100;
+  margin-left: 10px;
+  color: #F3F3F3;
+}
+
+.details p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+.details button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: none;
+  border-style: none;
+  border: 1px solid #F3F3F3;
+  color: #F3F3F3;
+  margin-top: 20px;
+  transition: background 300ms;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.details button:hover {
+  color: #464646;
+  background-color: #d9a138;
+}
+
+@media screen and (max-width: 500px) {
+  .details p {
+    font-size: 18px;
+  }
+}
+.container-fluid {
+  padding: 0px !important;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.carrufuentes {
+  font-weight: 400 !important;
+}
+
+.eand {
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 10px !important;
+  text-align: center;
+  height: 80px;
+  border-radius: 20px;
+}
+
+.eandd {
+  background: rgba(0, 0, 0, 0.75);
+  padding-top: 10px !important;
+  text-align: center;
+  height: 130px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

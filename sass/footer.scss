@@ -1,8 +1,40 @@
     @import "./variables";
+    // boton subir
+    .btn-subir {
+        position: absolute;
+        right: 50px;
+        top: 1000px;
+        .bbb {
+            height: 55px;
+            width: 55px;
+            border-radius: 30px;
+            border: none;
+            font-size: 30px;
+            background-color: $color-cuarto;
+            color: $color-quinto;
+        }
+        .bbb:hover {
+            background-color: $color-tercero;
+            animation: $animacion-icono; // animation: icono .5s ease;
+        }
+        .ir-arriba {
+            display: none;
+            padding: 20px;
+            background: #024959;
+            font-size: 20px;
+            color: #fff;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+    
     footer {
         color: $color-segundo;
         background-color: $color-tercero;
         margin-top: 800px;
+        // height: 500px;
         .contac-home {
             background-color: $color-quinto;
             color: $color-primero;
@@ -20,10 +52,18 @@
             text-decoration: none;
             color: $color-segundo;
         }
+        div {
+            a:hover {
+                color: $color-cuarto;
+            }
+        }
         .pago {
             text-align: left;
             h6 {
                 font-size: 15px;
+                i {
+                    color: $color-cuarto;
+                }
             }
         }
         .servicios {
@@ -32,12 +72,52 @@
                 font-size: 15px;
             }
         }
+        h4 {
+            color: $color-cuarto;
+            font-size: 20PX;
+        }
+        figure {
+            // position: relative;
+            top: -250px;
+            right: 30px;
+            // margin-bottom: -200px;
+            img {
+                width: 60%;
+            }
+        }
     }
     
     .pie {
         background-color: $color-primero;
-        height: 70px;
+        height: 90px;
         color: $color-segundo;
         text-align: center;
         padding-top: 30px;
+        // margin-bottom: 0px;
+    }
+    
+    .diejma {
+        text-decoration: overline;
+        color: $color-cuarto;
+    }
+    
+    @media (max-width: 768px) {
+        .contac-home {
+            margin-left: 50px !important;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .contac-home {
+            width: 70% !important;
+            margin-left: 60px !important;
+        }
+        .empresa {
+            width: 30% !important;
+            margin-right: 20px;
+        }
+        .servicios {
+            width: 30% !important;
+            margin-right: 30px !important;
+        }
     }

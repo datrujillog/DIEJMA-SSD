@@ -1,3 +1,33 @@
+.btn-subir {
+  position: absolute;
+  right: 50px;
+  top: 1000px;
+}
+.btn-subir .bbb {
+  height: 55px;
+  width: 55px;
+  border-radius: 30px;
+  border: none;
+  font-size: 30px;
+  background-color: #d9a138;
+  color: #ebebeb;
+}
+.btn-subir .bbb:hover {
+  background-color: #254382;
+  animation: icono 0.5s ease;
+}
+.btn-subir .ir-arriba {
+  display: none;
+  padding: 20px;
+  background: #024959;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 footer {
   color: #F3F3F3;
   background-color: #254382;
@@ -20,11 +50,17 @@ footer a {
   text-decoration: none;
   color: #F3F3F3;
 }
+footer div a:hover {
+  color: #d9a138;
+}
 footer .pago {
   text-align: left;
 }
 footer .pago h6 {
   font-size: 15px;
+}
+footer .pago h6 i {
+  color: #d9a138;
 }
 footer .servicios {
   text-align: left;
@@ -32,13 +68,51 @@ footer .servicios {
 footer .servicios h6 {
   font-size: 15px;
 }
+footer h4 {
+  color: #d9a138;
+  font-size: 20PX;
+}
+footer figure {
+  top: -250px;
+  right: 30px;
+}
+footer figure img {
+  width: 60%;
+}
 
 .pie {
   background-color: #464646;
-  height: 70px;
+  height: 90px;
   color: #F3F3F3;
   text-align: center;
   padding-top: 30px;
+}
+
+.diejma {
+  text-decoration: overline;
+  color: #d9a138;
+}
+
+@media (max-width: 768px) {
+  .contac-home {
+    margin-left: 50px !important;
+  }
+}
+@media (max-width: 576px) {
+  .contac-home {
+    width: 70% !important;
+    margin-left: 60px !important;
+  }
+
+  .empresa {
+    width: 30% !important;
+    margin-right: 20px;
+  }
+
+  .servicios {
+    width: 30% !important;
+    margin-right: 30px !important;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */
