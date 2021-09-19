@@ -1,6 +1,10 @@
 .contenedor {
   background-color: #f3f3f3;
 }
+.contenedor .bus {
+  display: flex;
+  justify-content: end;
+}
 .contenedor .prodes {
   margin-bottom: 40px;
   margin-top: 40px;
@@ -9,6 +13,13 @@
 .contenedor .dodos {
   margin-top: 50px;
 }
+
+.imgventas {
+  height: 180px !important;
+  width: 50% !important;
+  text-align: center;
+}
+
 header .logo {
   text-align: center;
   margin-bottom: 40px;
@@ -25,9 +36,9 @@ header form {
   margin-bottom: 20px;
 }
 
-header .barra-busqueda {
+.barra-busqueda {
   margin-top: 50px;
-  width: 70%;
+  width: 30%;
   height: 60px;
   line-height: 40px;
   background: #fff;
@@ -38,21 +49,26 @@ header .barra-busqueda {
   font-size: 16px;
 }
 
-header .categorias {
+.categorias {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-header .categorias a {
-  color: #9B9B9B;
+.categorias a {
+  color: #464646;
+  text-decoration: overline;
   margin: 10px 20px;
   font-size: 18px;
   font-weight: 700;
 }
 
-header .categorias a.activo {
-  color: #000;
+a:hover {
+  color: #d9a138 !important;
+}
+
+.categorias a.activo {
+  color: #d9a138;
 }
 
 /* ------------------------- */
@@ -194,6 +210,14 @@ div .contenedor-icono:hover a {
     transform: rotate3d(0, 1, 0, 360deg);
   }
 }
+@keyframes cardd {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(1, 0, 10, 350deg);
+  }
+}
 div .creado-por {
   margin-bottom: 40px;
   text-align: center;
@@ -220,6 +244,40 @@ div .creado-por a:hover {
   header .barra-busqueda {
     width: 100%;
   }
+}
+.card {
+  align-items: center;
+  border: none !important;
+  box-shadow: 2px 4px 15px 1px rgba(0, 0, 0, 0.65) !important;
+}
+
+.card:hover {
+  animation: cardd 1s ease;
+}
+
+.addnumero {
+  color: #d9a138;
+}
+
+.addCarrd {
+  background-color: #d9a138 !important;
+  border: none !important;
+  font-weight: 700 !important;
+}
+
+.addCarrd:hover {
+  color: #254382 !important;
+  font-weight: 700 !important;
+}
+
+.card-body {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.categorias {
+  align-items: flex-end;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -280,114 +280,313 @@
 
     <div class="contenedor">
         <div class="container">
-            <header>
+            <div class="row">
+                <header>
+                    <div class="bus">
 
-                <form action="">
-                    <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
-                </form>
-                <div class="categorias dodos" id="categorias">
-                    <a href="#" class="activo">Todos</a>
-                    <a href="#">Celulares</a>
-                    <a href="#">Ciudades</a>
-                    <a href="#">Personas</a>
-                    <a href="#">Animales</a>
-                </div>
-            </header>
-            <div class="container prodes">
-                <h3>
-                    <h3>Productos Destacados</h3>
-                </h3>
-            </div>
-
-
-            <section class="grid" id="grid">
-                <div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calles" data-descripcion="1.- Lorem ipsum dolor sit amet consectetur.">
-                    <div class="item-contenido">
-                        <img src="../Img/portafolio/ciudad1.png" alt="">
+                        <form action="">
+                            <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="  Buscar Productos Destacados">
+                        </form>
                     </div>
-                </div>
-
-                <div class="item" data-categoria="personas" data-etiquetas="personas mujeres" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
-                    <div class="item-contenido">
-                        <img src="../Img/portafolio/persona1.png" alt="">
+                    <div class="categorias dodos" id="categorias">
+                        <a href="#" class="activo">Todos</a>
+                        <a href="#">Electronica</a>
+                        <a href="#">Moda</a>
+                        <a href="#">Deportes</a>
+                        <a href="#">Hogar</a>
                     </div>
+                </header>
+                <div class="container prodes">
+                    <h3>
+                        <h3>Productos Destacados</h3>
+                    </h3>
                 </div>
 
-                <div class="item" data-categoria="paisajes" data-etiquetas="paisajes montañas mar playas" data-descripcion="3.- Lorem ipsum dolor sit amet consectetur.">
-                    <div class="item-contenido">
-                        <img src="../Img/portafolio/paisaje1.png" alt="">
+
+                <section class="grid" id="grid">
+                    <!-- ===== MODA ======= -->
+                    <div class="item" data-categoria="moda" data-etiquetas="moda,Moda, ropa,Ropa sandalias,Sandalias zapatos,Zapatos,Tacones, tacones" data-descripcion="1.- Lorem ipsum dolor sit amet consectetur.">
+                        <div class="item-contenido">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="imgventas " src="/Img/moda/f2.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Sandalia de mujer</h5>
+                                    <p class="card-text">Some quick example text to build on the card.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$210.000,00 </span> <span class=" addnumero"> $100.000,00</span></p>
+                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                </div>
+                            </div>
+
+
+
+                            <!-- <img src="../Img/portafolio/ciudad1.png" alt=""> -->
+                        </div>
                     </div>
-                </div>
+                    <!-- =================== -->
 
-                <div class="item" data-categoria="animales" data-etiquetas="animales leones" data-descripcion="4.- Lorem ipsum dolor sit amet consectetur.">
-                    <div class="item-contenido">
-                        <img src="/Img/portafolio/animal1.png" alt="">
+                    <!-- ====== DEPORTE ======== -->
+
+                    <div class="item" data-categoria="deportes" data-etiquetas="deportes,Deportes,patines,Patines,Patinetas,patinetas" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                        <div class="item-contenido">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="imgventas " src="/Img/ProductosDestacados/patines1.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title ">Patines</h5>
+                                    <p class="card-text">Some quick example text to build on the card.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$500.000,00 </span> <span class=" addnumero"> $400.000,00</span></p>
+                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> </div>
+                            </div>
+
+                            <!-- <img class="imgventas " src="../Img/ProductosDestacados/s2.png" alt=""> -->
+                        </div>
                     </div>
-                </div>
+                    <!-- ==================== -->
+                    <!-- =============== Decoración del hogar ==================== -->
+                    <div class="item" data-categoria="hogar" data-etiquetas="decoración,Decoracion hogar,Hogar,macetas,Macetas" data-descripcion="3.- Lorem ipsum dolor sit amet consectetur.">
+                        <div class="item-contenido">
 
-                <div class="item" data-categoria="animales" data-etiquetas="animales pandas" data-descripcion="5.- Lorem ipsum dolor sit amet consectetur.">
-                    <div class="item-contenido">
-                        <img src="/img/portafolio/animal2.png" alt="">
+                            <div class="card" style="width: 18rem;">
+                                <img class="imgventas " src="/Img/ProductosDestacados/h4.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Maceta</h5>
+                                    <p class="card-text">Some quick example text to build on the card.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$180.000,00 </span> <span class=" addnumero"> $80.000,00</span></p>
+                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                </div>
+                            </div>
+                            <!-- <img src="../Img/portafolio/paisaje1.png" alt=""> -->
+                        </div>
                     </div>
-                </div>
+                    <!-- ============== Fin === -->
+                    <!-- ======= Hogar========  -->
+                    <div class="item" data-categoria="hogar" data-etiquetas="Hogar,plantas,jarrones" data-descripcion="4.- Lorem ipsum dolor sit amet consectetur.">
+                        <div class="item-contenido">
+                            <div class="card" style="width: 18rem;">
+                                <img class="imgventas " src="/Img/ProductosDestacados/h2.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Plantas Y Jarrones</h5>
+                                    <p class="card-text">Some quick example text to build on the card.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$40.000,00 </span> <span class=" addnumero"> $25.000,00</span></p>
+                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> </div>
+                            </div>
 
-                <div class="item" data-categoria="personas" data-etiquetas="personas mujeres" data-descripcion="6.- Lorem ipsum dolor sit amet consectetur.">
-                    <div class="item-contenido">
-                        <img src="/Img/portafolio/persona2.png" alt="">
+                            <!-- <img src="/Img/portafolio/animal1.png" alt=""> -->
+                        </div>
                     </div>
-                </div>
+                    <!-- ======= Hogar========  -->
+                    <div class="item" data-categoria="hogar" data-etiquetas="Reloj,reloj de pared Reloj de pared" data-descripcion="5.- Lorem ipsum dolor sit amet consectetur.">
+                        <div class="item-contenido">
+                            <div class="card" style="width: 18rem;">
+                                <img class="imgventas " src="/Img/ProductosDestacados/h1.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Reloj De Pared</h5>
+                                    <p class="card-text">Some quick example text to build on the card.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$480.000,00 </span> <span class=" addnumero"> $350.000,00</span></p>
+                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                </div>
+                            </div>
 
-                <div class="item" data-categoria="paisajes" data-etiquetas="paisajes montañas niebla" data-descripcion="7.- Lorem ipsum dolor sit amet consectetur.">
-                    <div class="item-contenido">
-                        <img src="/img/portafolio/paisaje2.png" alt="">
+                            <!-- <img src="/img/portafolio/animal2.png" alt=""> -->
+                        </div>
                     </div>
-                </div>
-
-                <div class="item" data-categoria="ciudades" data-etiquetas="ciudades paisajes carreteras" data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
-                    <div class="item-contenido">
-                        <img src="/Img/portafolio/ciudad2.png" alt="">
+                    <!-- =========== DEPORTES =============== -->
+                    <div class="item" data-categoria="deportes" data-etiquetas="deportes Deportes balones futbol Fùtbol fùtbol pelota Pelota Americano americano futbol Americano Balon de futbal balon de futbol" data-descripcion="6.- Lorem ipsum dolor sit amet consectetur.">
+                        <div class="item-contenido">
+                            <div class="card" style="width: 18rem;">
+                                <img class="imgventas " src="/Img/ProductosDestacados/s2.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-center">Fùtbol Americano</h5>
+                                    <p class="card-text">Some quick example text to build on the card.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$180.000,00 </span> <span class=" addnumero"> $120.000,00</span></p>
+                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                </div>
+                            </div>
+                            <!-- <img class="imgventas " src="/Img/ProductosDestacados/s5.png" alt=""> -->
+                        </div>
                     </div>
-                </div>
-                <!-- celulares -->
-
-                <div class="item" data-categoria="celulares" data-etiquetas="celulares" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
-                    <div class="item-contenido">
-                        <img class="tamañoimg" src="/Img/ProductosDestacados/1.png" alt="">
+                    <!-- ================= -->
+                    <!-- ============ Decoración del hogar =========== -->
+                    <div class="item" data-categoria="hogar" data-etiquetas="Decoración, Hogar hogar cama, camas,Cama Cama De matrimonio Matrimonio" data-descripcion="7.- Lorem ipsum dolor sit amet consectetur.">
+                        <div class="item-contenido">
+                            <div class="card" style="width: 18rem;">
+                                <img class="imgventas " src="/Img/ProductosDestacados/h3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cama De Matrimonio</h5>
+                                    <p class="card-text">Some quick example text to build on the card.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$8.000.000,00 </span> <span class=" addnumero"> $6.660.000,00</span></p>
+                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                </div>
+                            </div>
+                            <!-- <img src="/img/portafolio/paisaje2.png" alt=""> -->
+                        </div>
                     </div>
-                </div>
-
-                <div class="item" data-categoria="celulares" data-etiquetas="celulares" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
-                    <div class="item-contenido">
-                        <img src="/Img/ProductosDestacados/2.jpg" alt="">
+                    <!-- ============================ -->
+                    <!-- ===== MODA ======= -->
+                    <div class="item" data-categoria="moda" data-etiquetas="moda, Moda,Ropa vestido, ropa Vestido de fiesta Fiesta" data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+                        <div class="item-contenido">
+                            <div class="card" style="width: 18rem;">
+                                <img class="imgventas " src="/Img/moda/f4.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">vestido de fiesta</h5>
+                                    <p class="card-text">Some quick example text to build on the card.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$480.000,00 </span> <span class=" addnumero"> $300.000,00</span></p>
+                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                </div>
+                            </div>
+                            <!-- <img src="/Img/portafolio/ciudad2.png" alt=""> -->
+                        </div>
                     </div>
-                </div>
+                    <!-- ============ Decoración del hogar =========== -->
+                    <div class="item" data-categoria="hogar" data-etiquetas="Decoración, del hogar Hogar Soplador De Nieve nieve soplador De Nieve" data-descripcion="7.- Lorem ipsum dolor sit amet consectetur.">
+                        <div class="item-contenido">
 
-                <div class="item" data-categoria="celulares" data-etiquetas="celulares" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
-                    <div class="item-contenido">
-                        <img src="/Img/ProductosDestacados/3.jpg" alt="">
+                            <div class="card" style="width: 18rem;">
+                                <img class="imgventas " src="/Img/ProductosDestacados/h5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Soplador De Nieve</h5>
+                                    <p class="card-text">Some quick example text to build on the card.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$4.000.000,00 </span> <span class=" addnumero"> $3.500.000,00</span></p>
+                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                </div>
+                            </div>
+                            <!-- <img src="/img/portafolio/paisaje2.png" alt=""> -->
+                        </div>
                     </div>
-                </div>
+                    <!-- ============================ -->
 
-                <div class="item" data-categoria="celulares" data-etiquetas="celulares" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
-                    <div class="item-contenido">
+                    <!-- ====== DEPORTE ======== -->
+                    <div class="item" data-categoria="deportes" data-etiquetas="deportes Deportes patines ,kit Kit, cricket Kit de cricket Kit De Cricket" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                        <div class="item-contenido">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="imgventas " src="/Img/ProductosDestacados/s4.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Kit De Cricket</h5>
+                                    <p class="card-text">Some quick example text to build on the card.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$800.000,00 </span> <span class=" addnumero"> $500.000,00</span></p>
+                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                </div>
+                            </div>
+
+                            <!-- <img class="imgventas " src="../Img/ProductosDestacados/s2.png" alt=""> -->
+                        </div>
+                    </div>
+                    <!-- ==================== -->
+                    <!-- celulares ============================================= -->
+
+
+                    <!-- ======= Electronica  -->
+                    <div class="item" data-categoria="electronica" data-etiquetas="celular iphone Celular iphone electronica Electronica Celulares celulares" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="imgventas " src="/Img/ProductosDestacados/2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"> Celular iphone</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$1.00.000,00 </span> <span class=" addnumero"> $800.000,00</span></p>
+                                <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ======= Electronica  -->
+                    <div class="item" data-categoria="electronica" data-etiquetas="electronica Electronica celulares samsung Celular Samsung" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="imgventas " src="/Img/ProductosDestacados/2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Celular Samsung</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$180.000,00 </span> <span class=" addnumero"> $80.000,00</span></p>
+                                <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ======= Electronica  -->
+
+                    <div class="item" data-categoria="electronica" data-etiquetas="electronica Electronica impresora laser Impresora laser  Impresora Laser IMPRESORA Laser laser" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="imgventas " src="/Img/ProductosDestacados/inpresora.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Impresora</h5>
+                                <p class="card-text">Some quick example text to build on the card .</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$2.00.000,00 </span> <span class=" addnumero"> $1.500.000,00</span></p>
+                                <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======= Electronica  -->
+                    <div class="item" data-categoria="electronica" data-etiquetas=" Electronica Play, play electronica control, Control De Videojuegos control de videojuegos" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
+                        <div class="card" style="width: 18rem;">
+                            <img class="imgventas " src="/Img/ProductosDestacados/pic5.jpg" class="card-img-top" alt="...">
+                            <!-- style="width: 60%;" -->
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Control De Videojuegos</h5>
+                                <p class="card-text">Mando Inalámbrico 2.4g Ps2/ps3/pc Amarillo 69900 pesos
+                                </p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$180.000,00 </span> <span class=" addnumero"> $80.000,00</span></p>
+                                <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- ======= Electronica  -->
+                    <div class="item" data-categoria="electronica" data-etiquetas="electronica Electronica Computador,Portatil, Lapto computador lapto portatil" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="imgventas " src="/Img/ProductosDestacados/Computador-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Portatil</h5>
+                                <p class="card-text">Some quick example text to build on the card .</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$180.000,00 </span> <span class=" addnumero"> $80.000,00</span></p>
+                                <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="item-contenido">
                         <img src="/Img/ProductosDestacados/4.jpg" alt="">
+                    </div> -->
                     </div>
-                </div>
-                <div class="item" data-categoria="celulares" data-etiquetas="celulares" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
-                    <div class="item-contenido">
-                        <img src="/Img/ProductosDestacados/5.jpg" alt="">
-                    </div>
-                </div>
-                <!-- Fin  Celulares -->
-            </section>
 
-            <section class="overlay" id="overlay">
-                <div class="contenedor-img">
-                    <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
-                    <img src="" alt="">
-                </div>
-                <p class="descripcion"></p>
-            </section>
+
+                    <!-- ======= Electronica  -->
+                    <div class="item" data-categoria="electronica" data-etiquetas="electronica Electronica Camaras camaras" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
+                        <div class="card" style="width: 18rem;">
+                            <img class="imgventas " style="width: 60%;" src="/Img/ProductosDestacados/Camara.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center ">
+                                <h5 class="card-title">Camara</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$150.000,00 </span> <span class=" addnumero"> $100.000,00</span></p>
+                                <a href="#" class="btn btn-primary addCarrd t"><i class="bi bi-cart-check"></i> add to cart</a>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- <div class="item-contenido">
+                        <img src="/Img/ProductosDestacados/5.jpg" alt="">
+                    </div> -->
+                    </div>
+
+                    <!-- Fin  Celulares ======================================-->
+                </section>
+
+                <section class="overlay" id="overlay">
+                    <div class="contenedor-img">
+                        <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                        <img src="" alt="">
+                    </div>
+                    <p class="descripcion"></p>
+                </section>
+            </div>
         </div>
 
     </div>
@@ -401,6 +600,8 @@
 
 
     <!-- ******************** FIN CODIGO ******************** -->
+
+
 
     <!-- ******************** Footer ******************** -->
 

@@ -2,6 +2,10 @@
 @import "./variables";
 .contenedor {
     background-color: $color-seix;
+    .bus {
+        display: flex;
+        justify-content: end;
+    }
     .prodes {
         margin-bottom: 40px;
         margin-top: 40px;
@@ -10,9 +14,12 @@
     .dodos {
         margin-top: 50px;
     }
-    .tamañoimg {
-        // height: 50px !important;
-    }
+}
+
+.imgventas {
+    height: 180px !important;
+    width: 50% !important;
+    text-align: center;
 }
 
 header .logo {
@@ -31,9 +38,9 @@ header form {
     margin-bottom: 20px;
 }
 
-header .barra-busqueda {
+.barra-busqueda {
     margin-top: 50px;
-    width: 70%;
+    width: 30%;
     height: 60px;
     line-height: 40px;
     background: #fff;
@@ -44,21 +51,26 @@ header .barra-busqueda {
     font-size: 16px;
 }
 
-header .categorias {
+.categorias {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-header .categorias a {
-    color: #9B9B9B;
+.categorias a {
+    color: $color-primero;
+    text-decoration: overline;
     margin: 10px 20px;
     font-size: 18px;
     font-weight: 700;
 }
 
-header .categorias a.activo {
-    color: #000;
+a:hover {
+    color: $color-cuarto !important;
+}
+
+.categorias a.activo {
+    color: $color-cuarto
 }
 
 
@@ -96,6 +108,7 @@ header .categorias a.activo {
 
 .grid .item img {
     width: 100%;
+    // height: 30%;
     cursor: pointer;
     vertical-align: top;
 }
@@ -220,6 +233,15 @@ div .contenedor-icono:hover a {
     }
 }
 
+@keyframes cardd {
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to {
+        transform: rotate3d(1, 0, 10, 350deg);
+    }
+}
+
 div .creado-por {
     margin-bottom: 40px;
     text-align: center;
@@ -251,6 +273,42 @@ div .creado-por a:hover {
     header .barra-busqueda {
         width: 100%;
     }
+}
+
+.card {
+    align-items: center;
+    border: none !important;
+    box-shadow: 2px 4px 15px 1px rgba(0, 0, 0, 0.65) !important;
+}
+
+.card:hover {
+    // transform: translate(10px, 10px);
+    animation: cardd 1s ease // animation: icono .5s ease;
+}
+
+.addnumero {
+    color: $color-cuarto;
+}
+
+.addCarrd {
+    background-color: $color-cuarto !important;
+    border: none !important;
+    font-weight: 700 !important;
+}
+
+.addCarrd:hover {
+    color: $color-tercero !important;
+    font-weight: 700 !important;
+}
+
+.card-body {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categorias {
+    align-items: flex-end;
 }
 
 // ======================================
