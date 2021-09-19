@@ -2,6 +2,8 @@
 @import "./variables";
 .contenedor {
     background-color: $color-seix;
+    display: flex;
+    justify-content: center;
     .bus {
         display: flex;
         justify-content: end;
@@ -233,15 +235,14 @@ div .contenedor-icono:hover a {
     }
 }
 
-@keyframes cardd {
-    from {
-        transform: rotate3d(0, 0, 0, 0);
-    }
-    to {
-        transform: rotate3d(1, 0, 10, 350deg);
-    }
-}
-
+// @keyframes cardd {
+//     from {
+//         transform: rotate3d(0, 0, 0, 0);
+//     }
+//     to {
+//         transform: rotate3d(1, 0, 10, 350deg);
+//     }
+// }
 div .creado-por {
     margin-bottom: 40px;
     text-align: center;
@@ -273,6 +274,9 @@ div .creado-por a:hover {
     header .barra-busqueda {
         width: 100%;
     }
+    .card {
+        width: 100% !important;
+    }
 }
 
 .card {
@@ -281,11 +285,10 @@ div .creado-por a:hover {
     box-shadow: 2px 4px 15px 1px rgba(0, 0, 0, 0.65) !important;
 }
 
-.card:hover {
-    // transform: translate(10px, 10px);
-    animation: cardd 1s ease // animation: icono .5s ease;
-}
-
+// .card:hover {
+//     // transform: translate(10px, 10px);
+//     animation: cardd 1s ease // animation: icono .5s ease;
+// }
 .addnumero {
     color: $color-cuarto;
 }
