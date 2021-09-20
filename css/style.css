@@ -3,6 +3,11 @@ header {
   padding: 0px;
 }
 
+.menuPrincipal {
+  background-color: #254382;
+  height: 60px;
+}
+
 .contenedor-uno {
   background-color: #464646;
 }
@@ -239,6 +244,11 @@ header {
   text-align: center;
   height: 130px;
   border-radius: 20px;
+}
+
+.diejmassdimg {
+  height: 150px;
+  width: 15%;
 }
 
 /*# sourceMappingURL=style.css.map */

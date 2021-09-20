@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn-subir {
   position: absolute;
   right: 50px;
@@ -28,91 +29,125 @@
   right: 20px;
 }
 
+:root {
+  --color-esqueleto: #EFF3F5;
+}
+
+.cover {
+  width: 100%;
+  height: 500px;
+  background: var(--color-esqueleto);
+  margin-top: 20px;
+}
+
+.container__article {
+  max-width: 1000px;
+  padding: 0px 20px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container__article .box__article {
+  width: 200px;
+  height: 250px;
+  background: var(--color-esqueleto);
+  margin: 20px;
+}
+
+/*Aquí debajo va el FOOTER*/
 footer {
-  color: #F3F3F3;
-  background-color: #254382;
-  margin-top: 800px;
-}
-footer .contac-home {
-  background-color: #ebebeb;
-  color: #464646;
-  margin-left: 100px;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border: 5px solid #d9a138;
-  border-radius: 15px;
-}
-footer .empresa {
-  margin-left: 50px;
-  font-size: 15px;
+  margin-top: 500px;
+  width: 100%;
+  padding: 50px 0px;
+  background-image: url(/Img/Footer/background-footer.svg);
+  background-size: cover;
 }
 footer a {
   text-decoration: none;
-  color: #F3F3F3;
 }
-footer div a:hover {
+footer .iconos {
   color: #d9a138;
 }
-footer .pago {
-  text-align: left;
+footer .face {
+  color: #254382;
 }
-footer .pago h6 {
-  font-size: 15px;
+footer .twitter {
+  color: #1d9bf0 !important;
 }
-footer .pago h6 i {
-  color: #d9a138;
+footer .linkedin {
+  color: #0b66c2;
 }
-footer .servicios {
-  text-align: left;
-}
-footer .servicios h6 {
-  font-size: 15px;
-}
-footer h4 {
-  color: #d9a138;
-  font-size: 20PX;
-}
-footer figure {
-  top: -250px;
-  right: 30px;
-}
-footer figure img {
-  width: 60%;
+footer .whatsapp {
+  color: #49c456;
 }
 
-.pie {
-  background-color: #464646;
-  height: 90px;
-  color: #F3F3F3;
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .logo img {
+  width: 180px;
+}
+
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.box__footer h4 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+}
+
+.box__footer a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+.box__footer a:hover {
+  opacity: 0.8;
+}
+
+.box__footer a .fab {
+  font-size: 20px;
+}
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
   text-align: center;
-  padding-top: 30px;
+  padding: 0px 40px;
 }
 
-.diejma {
-  text-decoration: overline;
-  color: #d9a138;
+.box__copyright p {
+  margin-top: 20px;
+  color: #7a7a7a;
 }
 
-@media (max-width: 768px) {
-  .contac-home {
-    margin-left: 50px !important;
-  }
-}
-@media (max-width: 576px) {
-  .contac-home {
-    width: 70% !important;
-    margin-left: 60px !important;
-  }
-
-  .empresa {
-    width: 30% !important;
-    margin-right: 20px;
-  }
-
-  .servicios {
-    width: 30% !important;
-    margin-right: 30px !important;
-  }
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
 }
 
 /*# sourceMappingURL=footer.css.map */
