@@ -74,14 +74,57 @@ footer .iconos {
 footer .face {
   color: #254382;
 }
+footer .faceboo:hover {
+  color: #254382 !important;
+  font-weight: 900;
+  text-decoration: overline !important;
+}
+footer .faceboo {
+  font-weight: 900 !important;
+  color: #254382 !important;
+}
 footer .twitter {
   color: #1d9bf0 !important;
+}
+footer .twitterr:hover {
+  color: #1d9bf0 !important;
+  text-decoration: overline !important;
+}
+footer .twitterr {
+  color: #1d9bf0 !important;
+  font-weight: 900 !important;
 }
 footer .linkedin {
   color: #0b66c2;
 }
+footer .linkedinn:hover {
+  color: #0b66c2 !important;
+  font-weight: 900 !important;
+  text-decoration: overline !important;
+}
+footer .linkedinn {
+  color: #0b66c2 !important;
+  font-weight: 900 !important;
+}
 footer .whatsapp {
   color: #49c456;
+}
+footer .whatsappp:hover {
+  color: #49c456 !important;
+  font-weight: 900 !important;
+  text-decoration: overline !important;
+}
+footer .whatsappp {
+  color: #49c456 !important;
+  font-weight: 900 !important;
+}
+footer .instagran {
+  font-weight: 900 !important;
+  color: #b43aa0 !important;
+}
+footer .instagran:hover {
+  font-weight: 900 !important;
+  text-decoration: overline !important;
 }
 
 .container__footer {
@@ -148,6 +191,10 @@ footer .whatsapp {
   border: none;
   height: 1px;
   background-color: #7a7a7a;
+}
+
+footer .box__footer a:hover {
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=footer.css.map */

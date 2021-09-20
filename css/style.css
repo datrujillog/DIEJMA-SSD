@@ -99,6 +99,7 @@ header {
 
 .navbar {
   background-color: #254382;
+  margin-bottom: -8px !important;
 }
 .navbar .nav-colo {
   color: #F3F3F3 !important;
