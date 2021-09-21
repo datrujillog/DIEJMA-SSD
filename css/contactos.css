@@ -1,3 +1,4 @@
+
 .migas a {
     text-decoration: none;
     color: rgb(70, 70, 70);
@@ -6,4 +7,30 @@
 .migas a:hover {
     color: rgb(37, 67, 130) !important;
     font-weight: 600;
+}
+.btn-primary{
+    background: #d9a138 !important;
+    border: none !important;
+}
+.btn-primary:hover{
+    background: #f3bb52 !important;
+  
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
 }
