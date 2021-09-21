@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contactenos</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/contactos.css">
     <!-- logo -->
@@ -20,6 +20,8 @@
 </head>
 
 <body>
+    <script src="/js/contactos.js"></script>
+
     <!-- ******************** HEADER ******************** -->
     <header class="container-fluid contenedor-uno">
         <div class="row">
@@ -186,8 +188,7 @@
     </div>
 
     <!-- ******************** CONTACTENOS******************** -->
-
-
+   
     <div class="container-md">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Tu Nombre</label>
@@ -196,7 +197,7 @@
 
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Tu Apellido</label>
-            <input type="text" class="form-control" id="name" placeholder="*Escribe Tu Apellido Aqui">
+            <input type="text" class="form-control" id="LastName" placeholder="*Escribe Tu Apellido Aqui">
         </div>
 
         <div class="mb-3">
@@ -209,9 +210,10 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-primary" type="button">Enviar</button>
+            <button class="btn btn-primary" type="button" onclick="validar()">Enviar</button>
         </div>
-        
+        </div>
+    
 
         <div class="whatsapp">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -220,7 +222,7 @@
             <i class="fa fa-whatsapp my-float"></i>
             <span class="btn btn-secondary my-btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">OYE MI PERRO</span>
         </a>
-
+      
          
         </div>
         <!-- ******************** FIN CODIGO ******************** -->
