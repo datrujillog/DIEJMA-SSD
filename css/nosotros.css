@@ -1,0 +1,287 @@
+.title{
+    text-align: center;
+    color: #254382;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 5rem;
+}
+
+.section-letter{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.container-breadcrumb{
+  background-color: #e9ecef;
+}
+
+/* Nosotros*/
+.container-about-us{
+    margin: 50px 0;
+}
+
+.about-us{
+    align-items: center;
+    text-align: justify;
+}
+
+/* Servicios */
+.service-box{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.service-box i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #d9a138;
+}
+
+.service-box i, .service-box h4{
+    transition: 0.5s;
+}
+
+.service-box-title{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-box:hover > i , .service-box:hover > h4 {
+    color: #007bff;
+}
+
+/* Team*/
+.profile h4{
+    color: #d9a138;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.profile h5{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.profile .img-box{
+    opacity: 1;
+    position: relative;
+}
+
+.img-box:after{
+    content: "";
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 0px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img-box ul{
+    margin: 0;
+    padding: 22px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; 
+}
+
+.img-box ul li {
+    margin: 3px;
+    padding: 10px; 
+    display: inline-block;
+}
+
+.img-box ul li  i{
+   font-size: 25px;
+}
+
+.img-box a{
+    color: #fff;
+}
+
+.img-box:hover:after{
+    opacity: 1;
+}
+
+.img-box:hover ul{
+    opacity: 1;
+}
+
+.img-box a:hover li{
+    color:#007bff;
+    border:1px solid #007bff;
+}
+
+.img-box:after, .img-box ul, .img-box ul li {
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.container-team{
+    margin-bottom: 100px;
+}
+
+
+/* Carrusel*/
+.container-carrusel{
+    position: relative;
+    margin: 25px 0;
+}
+.carousel-item{
+    height: 60vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.carousel-caption{
+    position: absolute;
+    top:30%;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-title{
+    font-size: 80px;
+    font-weight: bold;
+    
+}
+
+.carousel-title-alternative{
+    color: yellow;
+    
+}
+
+/* Equipo de trabajo
+
+.team{
+    margin: 75px 0;
+}
+
+.profile{
+    margin-top: 25px;
+}
+
+.profile .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile h4{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile h5{
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.profile p{
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.img-box:after{
+    content: "";
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 0px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img-box ul{
+    margin: 0;
+    padding: 22px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; 
+}
+
+.img-box ul li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    
+    margin: 3px;
+    padding: 10px; 
+    display: inline-block;
+}
+
+.img-box a{
+    color: #fff;
+}
+
+.img-box:hover:after{
+    opacity: 1;
+}
+
+.img-box:hover ul{
+    opacity: 1;
+}
+
+.img-box a:hover li{
+    color:#007bff;
+    border:1px solid #007bff;
+}
+
+.img-box:after, .img-box ul, .img-box ul li {
+    transition: all 0.5s ease-in-out 0s;
+}
+
+/*
+Centrar imagenes en el circulo
+
+.img-box ul{
+    margin: 0;
+    padding: 22px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; 
+}
+
+.img-box ul li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 10px; 
+    display: inline-block;
+}
+
+*/
+
+
+
