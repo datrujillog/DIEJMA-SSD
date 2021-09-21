@@ -20,7 +20,7 @@
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
+	bottom:50px;
 	right:40px;
 	background-color:#25d366;
 	color:#FFF;
@@ -33,4 +33,21 @@
 
 .my-float{
 	margin-top:16px;
+	color:#ffffff;
+}
+.my-float:hover{
+	margin-top:16px;
+	color:#ffffff;
+}
+.float:hover .my-btn{
+	display: block !important;
+	position: absolute !important;
+	top: 0%;
+
+}
+.my-btn{
+	display: none !important;
+    margin-bottom: 250%;
+    right: 110% !important;
+    width: 170%!important
 }
