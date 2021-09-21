@@ -448,6 +448,7 @@ div .creado-por a:hover {
 .clock {
   font-weight: bolder;
   font-size: 35px;
+  line-height: 1;
 }
 .clock div {
   padding: 20px;
