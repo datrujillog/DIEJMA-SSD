@@ -50,3 +50,66 @@ window.addEventListener('load', () => {
         evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
     });
 });
+
+// ******************** Cuenta regresiva  ********************
+
+const getRemainTime = deadline => {
+    let now = new Date(),
+        remainTime = (new Date(deadline) - now + 1000) / 1000,
+        remainSeconds = ('0' + Math.floor(remainTime % 60)).slice(-2),
+        remainMinutes = ('0' + Math.floor(remainTime / 60 % 60)).slice(-2),
+        remainHours = ('0' + Math.floor(remainTime / 3600 % 24)).slice(-2);
+    remainDays = Math.floor(remainTime / (3600 * 24));
+
+    return {
+        remainTime,
+        remainSeconds,
+        remainMinutes,
+        remainHours,
+        remainDays
+    }
+
+}
+
+// console.log(getRemainTime('Sep 22 2021 15:00:51 GMT-0500 '))
+
+const countdwn = (deadline, elem, finalMessage) => {
+    const el = document.getElementById(elem);
+
+    const timeUpdate = setInterval(() => {
+
+        let t = getRemainTime(deadline);
+
+        el.innerHTML = `<div style="background-color: rgba(0, 0, 0, 0.75); width: 12%; height: 150px; border-radius: 50px;">${t.remainDays}<br> <div style="font-size: 25px;">Days</div>
+         </div> 
+        
+        
+       <div style="background-color: rgba(0, 0, 0, 0.75); width: 12%; height: 150px; border-radius: 50px; ">${t.remainHours}<br><div style="font-size: 25px;">Hours</div>
+       </div> 
+        
+        
+        <div style="background-color: rgba(0, 0, 0, 75); width: 13%; height: 150px; border-radius: 50px;">${t.remainMinutes}<br> <div style="font-size: 25px;">Minutes</div>
+        </div>
+        
+       <div style="background-color: rgba(0, 0, 0, 4); width: 14%; height: 150px; border-radius: 50px;">${t.remainSeconds}<br><div style="font-size: 25px;">Seconds</div></div>  `;
+
+
+
+
+        if (t.remainTime <= 1) {
+            clearInterval(timeUpdate)
+            el.innerHTML = finalMessage;
+        }
+
+    }, 1000)
+
+};
+
+countdwn('Sep 30 2021 17:10:00 GMT-0500', 'clock',
+    'Feliz 2021');
+
+// style="background-color: rgba(0, 0, 0, 0.4); width: 100px; height: 100px;  border-radius: 50px; !import"
+
+
+// el.innerHTML = ` ${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}s`;
+// ******************** FIN CODIGO ********************
