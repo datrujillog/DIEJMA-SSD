@@ -22,5 +22,5 @@ function validar() {
         alert("Correo Incorrecto");
         return false;
     }
-
+ 
 }
