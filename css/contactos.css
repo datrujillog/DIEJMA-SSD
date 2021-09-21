@@ -54,3 +54,6 @@
 .cotainer-md{
    margin-top: -20% !important;
 }
+.img-thumbnail{
+	border: none!important;
+}
