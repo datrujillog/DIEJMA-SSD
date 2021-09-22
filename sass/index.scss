@@ -1,4 +1,5 @@
 @import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Roboto+Mono:wght@200;300;400&display=swap');
 // Animacion de css para movicion de 
 .animatea {
     text-align: center;
@@ -352,14 +353,17 @@ div .creado-por a:hover {
 }
 
 .addCarrd {
+    // background-color: $color-tercero !important;
     background-color: $color-cuarto !important;
     border: none !important;
     font-weight: 700 !important;
+    color: $color-tercero !important;
 }
 
 .addCarrd:hover {
     color: $color-tercero !important;
     font-weight: 700 !important;
+    box-shadow: 1px 1px 30px 0px $color-cuarto;
 }
 
 .card-body {
@@ -495,17 +499,34 @@ div .creado-por a:hover {
 }
 
 .clock {
-    // background: #000;
+    // background: $color-segundo;
     font-weight: bolder;
     font-size: 35px;
     line-height: 1;
+    margin-top: 70px !important;
     div {
         padding: 20px;
     }
 }
 
 .clockcont {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-left: 100px;
     padding-right: 80px;
+    h1 {
+        color: $color-segundo;
+        font-family: 'Gluten', cursive;
+        font-size: 70px;
+    }
+    h3 {
+        text-align: center;
+        color: red;
+        font-size: 35px;
+        font-family: 'Gluten', cursive;
+    }
+}
+
+// ============ Envios gratis ===========
+.contenedor_envios_gratis {
+    // display: flex !important;
 }

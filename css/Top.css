@@ -1,0 +1,65 @@
+/*--
+Author: Diego Alonso Trujillo
+Author URL: https://devtrujillo.herokuapp.com
+
+--*/
+
+.w3agile-ftr-top {
+    margin-top: 100px;
+    padding: 4em 0;
+    background: url(../Img/oferEnvios/bg1.jpg)no-repeat center 0px;
+    background-size: cover;
+}
+
+.ftr-top-left {
+    float: left;
+}
+
+.ftr-top-right {
+    float: right;
+    width: 72%;
+}
+
+.ftr-top-left i.fa {
+    font-size: 2em;
+    border: 1px solid;
+    color: #176aff;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 2;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    transition: .5s all;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.ftr-top-left i.fa.fa-user {
+    color: #00c57e;
+}
+
+.ftr-top-left i.fa.fa-thumbs-o-up {
+    color: #fb4602;
+}
+
+.ftr-top-right h4 {
+    font-size: 1.4em;
+    font-family: 'Offside', cursive;
+    margin-bottom: 0.5em;
+    color: #F3F3F3;
+}
+
+.ftr-top-right p {
+    color: rgb(70, 70, 70);
+    font-weight: 600;
+}
+
+.ftr-top-grids:hover i.fa {
+    color: #fff;
+}

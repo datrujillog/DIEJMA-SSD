@@ -88,10 +88,10 @@ const countdwn = (deadline, elem, finalMessage) => {
        </div> 
         
         
-        <div style="background-color: rgba(0, 0, 0, 75); width: 13%; height: 150px; border-radius: 50px;">${t.remainMinutes}<br> <div style="font-size: 25px;">Minutes</div>
+        <div style="background-color: rgba(0, 0, 0, 0.75); width: 13%; height: 150px; border-radius: 50px;">${t.remainMinutes}<br> <div style="font-size: 25px;">Minutes</div>
         </div>
         
-       <div style="background-color: rgba(0, 0, 0, 4); width: 14%; height: 150px; border-radius: 50px;">${t.remainSeconds}<br><div style="font-size: 25px;">Seconds</div></div>  `;
+       <div style="background-color: rgba(0, 0, 0, 0.75); width: 14%; height: 150px; border-radius: 50px;">${t.remainSeconds}<br><div style="font-size: 25px;">Seconds</div></div>  `;
 
 
 

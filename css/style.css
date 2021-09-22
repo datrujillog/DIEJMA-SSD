@@ -1,3 +1,9 @@
+/*--
+Author: Diego Alonso Trujillo
+Author URL: https://devtrujillo.herokuapp.com
+
+--*/
+
 header {
     background-color: #f3f3f3;
     padding: 0px;
@@ -143,6 +149,7 @@ header {
     position: relative;
     background-image: url(../Img/carrusel/5.jpg);
     background-size: 200%;
+    -webkit-animation: movimiento 20s infinite linear alternate;
     animation: movimiento 20s infinite linear alternate;
 }
 
@@ -152,6 +159,7 @@ header {
     position: relative;
     background-image: url(../Img/carrusel/8.jpg);
     background-size: 200%;
+    -webkit-animation: movimiento 20s infinite linear alternate;
     animation: movimiento 20s infinite linear alternate;
 }
 
@@ -161,7 +169,17 @@ header {
     position: relative;
     background-image: url(../Img/carrusel/3.jpg);
     background-size: 200%;
+    -webkit-animation: movimiento 20s infinite linear alternate;
     animation: movimiento 20s infinite linear alternate;
+}
+
+@-webkit-keyframes movimiento {
+    from {
+        background-position: bottom left;
+    }
+    to {
+        background-position: top right;
+    }
 }
 
 @keyframes movimiento {
@@ -276,6 +294,9 @@ header {
     height: 150px;
     width: 15%;
 }
+
+
+/*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */
