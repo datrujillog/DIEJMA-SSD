@@ -326,6 +326,10 @@ Author URL: https://devtrujillo.herokuapp.com
 
     <!-- ******************** Portafolio productos Destacados ******************** -->
 
+
+
+
+
     <div class="contenedor">
         <div class="container">
             <div class="row">
@@ -348,6 +352,16 @@ Author URL: https://devtrujillo.herokuapp.com
                     <h3>
                         <h3 class="animated infinite pulse delay-2s ">Productos Destacados</h3>
                     </h3>
+                    <!-- ******************** ver carro******************** -->
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIG1QYJKoZIhvcNAQcEoIIGxjCCBsICAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCtUGnvCEHrkU+U5cRfrcETujC4SS5sp4pAYcoOChtfskxYubBWivS1WPU3z/988szyjeB7hZT2rtdwnObbqSs2toVyln/SuGPEeyk+TfqDUYfu188eeK0UR60iU78iuVIyu3X52UHlR5pCptsL6ejvKEAH1mjHtO3bgFsdhgXwoDELMAkGBSsOAwIaBQAwUwYJKoZIhvcNAQcBMBQGCCqGSIb3DQMHBAjjlPEddauPXYAwNpEBX+7UetDfpG1DfMewTMms66NWc4aj05D6zfSFKwzt9OrV1eSXb/zxybvrpew0oIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjEwOTIzMDA1MjM5WjAjBgkqhkiG9w0BCQQxFgQUXqRqSNHY13Mns+cP5MQe/XtT52QwDQYJKoZIhvcNAQEBBQAEgYChEoIgMG0W5XSeT1jOtsRPgWVBoHjXxZFeVWp0fqiT4WQcn81qnQTi+7TM6DSiFteewndVuQ0xJaFo4iEQl7XlblMGxx6ds6yoHWY0Hr5b2gnJvHy7Jo5vg2D9zzB418uyZ/q52S5b16MHnyB0mhOBAxsCECIjGJd92xKp2puqyw==-----END PKCS7-----">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+
+
+                    <!-- ******************** FIN CODIGO ******************** -->
                 </div>
 
 
@@ -363,9 +377,18 @@ Author URL: https://devtrujillo.herokuapp.com
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Sandalia de mujer</h5>
                                     <p class="card-text">Some quick example text to build on the card.</p>
-                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$210.000,00 </span> <span class=" addnumero   animated infinite pulse delay-2s animatea "></p>
-                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$100.000,00</h5>
-                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$200,00</span> <span class=" addnumero   animated infinite pulse delay-2s animatea "></p>
+                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$129,00 USD</h5>
+                                    <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                    
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="H94T86MFZY99A">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+                                        
+                                        
                                 </div>
                             </div>
 
@@ -386,9 +409,21 @@ Author URL: https://devtrujillo.herokuapp.com
                                 <div class="card-body text-center">
                                     <h5 class="card-title ">Patines</h5>
                                     <p class="card-text">Some quick example text to build on the card.</p>
-                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$500.000,00 </span>
-                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$400.000,00</h5>
-                                        <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> </div>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$600,00</span>
+                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$486,00 USD</h5>
+                                        <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="F756Q69MQLE6N">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+
+
+
+
+                                </div>
                             </div>
 
                             <!-- <img class="imgventas " src="../Img/ProductosDestacados/s2.png" alt=""> -->
@@ -406,7 +441,16 @@ Author URL: https://devtrujillo.herokuapp.com
                                     <p class="card-text">Some quick example text to build on the card.</p>
                                     <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$180.000,00 </span>
                                         <h5 class="animated infinite pulse delay-2s animatea addnumero">$80.000,00</h5>
-                                        <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                        <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="KXU76EX46R7EQ">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+
+
+
                                 </div>
                             </div>
                             <!-- <img src="../Img/portafolio/paisaje1.png" alt=""> -->
@@ -425,7 +469,14 @@ Author URL: https://devtrujillo.herokuapp.com
                                     <p class="card-text">Some quick example text to build on the card.</p>
                                     <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$210.000,00 </span> <span class=" addnumero   animated infinite pulse delay-2s animatea "></p>
                                      <h5 class="animated infinite pulse delay-2s animatea addnumero">$100.000,00</h5>
-                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                    <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="AF4XVKDQ2BVP2">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+                                        
                                 </div>
                             </div>
                         </div>
@@ -461,7 +512,14 @@ Author URL: https://devtrujillo.herokuapp.com
                                     <p class="card-text">Some quick example text to build on the card.</p>
                                     <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$480.000,00 </span>
                                         <h5 class="animated infinite pulse delay-2s animatea addnumero">$350.000,00</h5>
-                                        <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                        <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="4WVQMSRBAL3BQ">
+                                            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+
                                 </div>
                             </div>
 
