@@ -7,8 +7,8 @@ Author URL: https://devtrujillo.herokuapp.com
 .w3agile-ftr-top {
     margin-top: 100px;
     padding: 4em 0;
-    background: url(../Img/top10/img1.jpg)no-repeat center 0px;
-    /* background: url(../Img/oferEnvios/bg1.jpg)no-repeat center 0px; */
+    /*background: url(../Img/top10/img1.jpg)no-repeat center 0px; */
+    background: url(../Img/oferEnvios/bg1.jpg)no-repeat center 0px; 
     background-size: cover;
 }
 
