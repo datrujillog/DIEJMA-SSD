@@ -11,6 +11,7 @@
 .btn-primary{
     background: #d9a138 !important;
     border: none !important;
+	margin-bottom: 4rem;
 }
 .btn-primary:hover{
     background: #f3bb52 !important;
@@ -49,7 +50,8 @@
 	display: none !important;
     margin-bottom: 250%;
     right: 110% !important;
-    width: 170%!important
+    width: 170%!important;
+
 }
 .contactos{
     margin-top: 5%;
@@ -57,6 +59,19 @@
 .img-thumbnail{
 	border: none!important;
 }
+.img-fluid{
+	
+	width: 100% !important;
+	height: 300px !important;
+}
 footer {
 	margin-top: 50px !important;
+}
+.titulo {
+text-align: center;
+margin-top: -10rem;
+color: ivory;
+}
+.container-services{
+	margin-top: 12rem;
 }
