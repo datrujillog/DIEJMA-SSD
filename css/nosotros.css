@@ -21,9 +21,10 @@ h3{
 }
 
 .design-title{
-    font-size: 10vw;
+    font-size: 11.5vw;
     text-align: center;
     text-shadow:black 0.1em 0.1em 0.2em;
+    font-family: 'Fredoka One', cursive;
 }
 
 /* Coworking */
