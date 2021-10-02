@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contactenos</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/contactos.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/index.css">
     <!-- logo -->
     <link rel="icon" href="/Img/icono/icon.png" />
     <!-- npm Booststarp -->
@@ -16,12 +18,280 @@
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
     <!-- font-awesome icons -->
     <link href="/css/font-awesome.css" rel="stylesheet" />
-    <!-- //font-awesome icons -->
+    <!-- //font-awesome icons -->  
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="/js/contactos.js"></script>
+    <script src="/node_modules/aos/dist/aos.js "></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- unpkg -->
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js "></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js "></script>
+    <script src="/js/index.js "></script>
+
 </head>
-
 <body>
+  
+    <!-- ******************** HEADER ******************** -->
+    <header class="container-fluid contenedor-uno">
+        <div class="row">
+            <div class=" col-sm-12 col-lg-6">
+                <div>
+                    <p class="pt-2">HASTA $ 50 DE DESCUENTO EN PORTÁTILES | USAR CÓDIGO DE CUPÓN LAPPY</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <nav class="nav justify-content-center">
+                    <a class="nav-link active" href="#"><i class="bi bi-person"></i> Mi cuenta</a>
+                    <a class="nav-link" href="#"><i class="bi bi-percent"></i> Descuentos</a>
+                    <a class="nav-link mini " href="#"><i class="bi bi-credit-card"></i> Tarjeta de crédito</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- DESDE AQUI -->
+    <!-- logos -->
+    <header class="container contenedor-dos ">
+      <div class="row ">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 text-sm-center   text-xs-center ">
+                <div class="imm">
+                    <a href="Index.html"><img src="/Img/icono/icon.png" alt="shopping"></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-5 mt-sm-3 mt-lg-3   mt-3 buscar">
+                <div class=" ">
+                    <form action="#" method="post">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary lupa" type="button" id="button-addon2"><i
+                                    class="bi bi-search lupaa "></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+           
+            <!-- ================================ -->
+
+            <div class="col-xs-12 col-sm-4 col-sm-1 text-sm-center conte-contac">
+                <div class="">
+                    <div class="contenedor-contac">
+                        <div class="contac2">
+
+                            <!-- ******************** MODAL CARRITO ******************** -->
+                            <!-- btn-danger -->
+                            <button type="button" class="btn   btn-carrito" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="bi bi-cart-check-fill"
+                                    aria-hidden="true"></i>
+                            </button>
 
 
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="recipient-name"
+                                                        class="col-form-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ******************** FIN CODIGO ******************** -->
+
+                        </div>
+                        <div class="raya">|</div>
+
+
+                        <div class="contac2">
+                            <a class="contac44" href="contactos.html"><i class="bi bi-geo-alt-fill ubi"></i> Contactos</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- ******************** barra de navegacion ******************** -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 sticky-top">
+        <div class="container-fluid navbar ">
+            <a class="navbar-brand nav-colo" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-colo" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias de la tienda
+                        </a>
+                        <ul class="dropdown-menu sub-lista" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-colo-dos" href="#">Action</a></li>
+                            <li><a class="dropdown-item nav-colo-dos" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item nav-colo-dos" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled nav-colo">Shopping</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- ******************** FIN CODIGO ******************** -->
+
+    <!-- ******************** migas de pan ******************** -->
+   
+    <!-- ******************** CONTACTENOS******************** -->
+    
+
+
+ 
+    <img src="https://convergia.io/es-mx/wp-content/uploads/elementor/thumbs/telemarketing-convergia-p6oc6ezx5t5npfqbmd4bkj74dxpwkrct7uweaxgzn0.png" class="img-fluid" alt="...">
+     <h1 class="titulo">Contactanos <i class="bi bi-envelope"></i> </h1> 
+    <div class="container container-services">
+       
+
+        <div class="row">
+           
+            <div class="col-md-7 service-box">
+                <form>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Tu Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="*Escribe Tu Nombre Aqui" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Tu Apellido</label>
+                    <input type="text" class="form-control" id="LastName" placeholder="*Escribe Tu Apellido Aqui" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Tu Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@ejemplo.com" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">¿En Que Podemos Ayudarte?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class=" d-md-block">
+                    <button class="btn btn-primary" type="submit" onclick="validar()">Enviar</button>
+                </div>
+            </form>
+            </div>
+            
+            <div class="col-md-5 service-box">
+
+                
+                <h4 class="service-box-title">Estamos Ubicados En  <i class="bi bi-geo-alt"></i> </h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.977094490304!2d-74.0782321857996!3d4.598125943820146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7eccfe58f%3A0x99cb72b35351476!2sPlaza%20de%20Bol%C3%ADvar%20de%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1632881035425!5m2!1ses!2sco" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>               
+               
+                <br></br>
+                <h4 class="service-box-title">brindamos soporte 24/7 <i class="bi bi-headset"></i> </h4>
+                <p>contamos con una amplia referencia de asesores
+                dispuestos a atenderte las 24 horas del dia
+                comunicate con nosotros en el telefono 
+                <i class="bi bi-telephone"></i>0000000 EXT:91</p>
+                <h4 class="service-box-title">Soporte@Shopping.com <i class="bi bi-envelope"></i> </h4>               
+
+
+
+            </div>
+        
+        </div>
+    </div>
+
+
+
+
+
+    <div class="whatsapp">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=3115075467&text=OYE%21%20MI%20PERRO." class="float"
+            target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+            <span class="btn btn-secondary my-btn" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Tooltip on right">En Que Podemos Ayudarte?</span>
+        </a>
+
+
+    </div>
+    <!-- ******************** FIN CODIGO ******************** -->
+    <footer>
+        <div class="container__footer">
+             <div class="box__footer">
+                 <div class="logo">
+                     <img src="/Img/icono/icon.png" alt="">
+                 </div>
+                 <div class="terms">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente
+                         deserunt.
+                     </p>
+                 </div>
+             </div>
+             <div class="box__footer">
+                 <h4>Compañia</h4>
+                 <a href="nosotros.html" target="_blank">Sobre nosotros</a>
+                 <a href="productos.html" target="_blank">Productos</a>
+                 <a href="ayuda.html" target="_blank">Ayuda</a>
+                 <a href="contactos.html" target="_blank">Contactenos</a>
+                 <a href="#" target="_blank">Descuentos</a>
+             </div>
+             <div class="box__footer">
+                 <h4>Mètodos de pago</h4>
+                 <a href="#"><i class="bi bi-credit-card-2-back iconos "></i> Targeta de crèdito dèbito</a>
+                 <a href="#"><i class="bi bi-laptop iconos "></i> Banca neta</a>
+                 <a href="#"><i class="bi bi-cash iconos "></i> Contra reembolso</a>
+                 <a href="#"><i class="bi bi-gift iconos "></i> Cupon de regalo electronico</a>
+                 <a href=""><i class="bi bi-bar-chart-fill iconos "></i> EMI Conversion</a>
+             </div>
+             <div class="box__footer">
+                 <h4>Redes Sociales</h4>
+                 <a class="faceboo" href="#"> <i class="fab fa-facebook-square face"></i> Facebook</a>
+                 <a class="twitterr" href="#"><i class="fab fa-twitter-square twitter"></i> Twitter</a>
+                 <a class="linkedinn" href="#"><i class="fab fa-linkedin linkedin"></i> Linkedin</a>
+                 <a class="instagran" href="#"><img width="18px" height="18px" src="/Img/icono/instagran.png" alt=""> Instagram</a>
+                 <a class="whatsappp" href="#"><i class="fab fa-whatsapp-square whatsapp"></i> Whatsapp</a>
+             </div>
+         </div>
+         <div class="box__copyright">
+             <hr>
+             <p> Grupo de Desarrollo de software &copy; 2021 <img class="diejmassdimg" src="/Img/icono/logooo_preview_rev_1.png" alt=""></p>
+         </div>
+     </footer>
+ 
 </body>
 
 </html>
