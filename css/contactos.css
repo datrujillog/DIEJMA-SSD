@@ -50,7 +50,7 @@
 	display: none !important;
     margin-bottom: 250%;
     right: 110% !important;
-    width: 170%!important;
+    width: auto !important;
 
 }
 .contactos{
@@ -74,4 +74,12 @@ color: ivory;
 }
 .container-services{
 	margin-top: 12rem;
+}
+.row {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0;
+}
+.sticky-top {
+    top: -0.5rem !important;
+  
 }
