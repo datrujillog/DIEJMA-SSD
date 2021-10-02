@@ -1,3 +1,4 @@
+
 .migas a {
     text-decoration: none;
     color: rgb(70, 70, 70);
@@ -6,4 +7,79 @@
 .migas a:hover {
     color: rgb(37, 67, 130) !important;
     font-weight: 600;
+}
+.btn-primary{
+    background: #d9a138 !important;
+    border: none !important;
+	margin-bottom: 4rem;
+}
+.btn-primary:hover{
+    background: #f3bb52 !important;
+  
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:50px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+	color:#ffffff;
+}
+.my-float:hover{
+	margin-top:16px;
+	color:#ffffff;
+}
+.float:hover .my-btn{
+	display: block !important;
+	position: absolute !important;
+	top: 0%;
+
+}
+.my-btn{
+	display: none !important;
+    margin-bottom: 250%;
+    right: 110% !important;
+    width: auto !important;
+
+}
+.contactos{
+    margin-top: 5%;
+}
+.img-thumbnail{
+	border: none!important;
+}
+.img-fluid{
+	
+	width: 100% !important;
+	height: 300px !important;
+}
+footer {
+	margin-top: 50px !important;
+}
+.titulo {
+text-align: center;
+margin-top: -10rem;
+color: ivory;
+}
+.container-services{
+	margin-top: 12rem;
+}
+.row {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0;
+}
+.sticky-top {
+    top: -0.5rem !important;
+  
 }
