@@ -220,37 +220,40 @@
 
     <!-- ******************** CONTACTENOS******************** -->
 
-
-
-
-    <img src="https://convergia.io/es-mx/wp-content/uploads/elementor/thumbs/telemarketing-convergia-p6oc6ezx5t5npfqbmd4bkj74dxpwkrct7uweaxgzn0.png" class="img-fluid" alt="...">
-    <h1 class="titulo">Contactanos <i class="bi bi-envelope"></i> </h1>
+    <div class="map-section">
+        <iframe style="border:0; width: 100%; height: 300px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+    
+      <div class="section-title">
+       
+        <p>Contactanos</p>
+      </div>
     <div class="container container-services">
 
 
         <div class="row">
 
-            <div class="col-md-7 service-box">
+            <div class="col-md-8 service-box">
                 <form>
-
-                    <div class="mb-3">
+             <div class="row"> 
+                    <div class="col-lg-6 form-group">
                         <label for="exampleFormControlInput1" class="form-label">Tu Nombre</label>
                         <input type="text" class="form-control" id="name" placeholder="*Escribe Tu Nombre Aqui" required>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="col-lg-6 form-group mt-3 mt-md-0">
                         <label for="exampleFormControlInput1" class="form-label">Tu Apellido</label>
                         <input type="text" class="form-control" id="LastName" placeholder="*Escribe Tu Apellido Aqui" required>
                     </div>
-
+                </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Tu Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="name@ejemplo.com" required>
+                        <input type="email" class="form-control" id="email" placeholder="name@ejemplo.com"    required>
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">¿En Que Podemos Ayudarte?</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
                     </div>
                     <div class=" d-md-block">
                         <button class="btn btn-primary" type="submit" onclick="validar()">Enviar</button>
@@ -258,26 +261,43 @@
                 </form>
             </div>
 
-            <div class="col-md-5 service-box">
+            <div class="col-md-4 info">
+             
 
-
-                <h4 class="service-box-title">Estamos Ubicados En <i class="bi bi-geo-alt"></i> </h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.977094490304!2d-74.0782321857996!3d4.598125943820146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7eccfe58f%3A0x99cb72b35351476!2sPlaza%20de%20Bol%C3%ADvar%20de%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1632881035425!5m2!1ses!2sco"
-                    width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-                <br></br>
-                <h4 class="service-box-title">brindamos soporte 24/7 <i class="bi bi-headset"></i> </h4>
-                <p>contamos con una amplia referencia de asesores dispuestos a atenderte las 24 horas del dia comunicate con nosotros en el telefono
-                    <i class="bi bi-telephone"></i>0000000 EXT:91</p>
-                <h4 class="service-box-title">Soporte@Shopping.com <i class="bi bi-envelope"></i> </h4>
-
-
+                    
+                    <div class="address">
+                      <i class="bi bi-geo-alt"></i>
+                      <h4> Ubicacion:</h4>
+                      <p> Bogota Colombia Plaza De Bolivar</p>
+                    </div>
+      
+                    <div class="horarios">
+                      <i class="bi bi-clock"></i>
+                      <h4>Horarios De Atencion:</h4>
+                      <p>
+                        Lunes-Viernes:<br>
+                        11:00 AM - 2300 PM
+                      </p>
+                    </div>
+                    
+                    <div class="email">
+                      <i class="bi bi-envelope"></i>
+                      <h4>Email:</h4>
+                      <p>soporte@Shopping.com</p>
+                    </div>
+      
+                    <div class="phone">
+                      <i class="bi bi-phone"></i>
+                      <h4>Telefono:</h4>
+                      <p>+1 0000 000 0000</p>
+                    </div>
+      
+                 
 
             </div>
 
         </div>
-    </div>
-
+   
 
 
 
@@ -289,7 +309,7 @@
             <span class="btn btn-secondary my-btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">En Que Podemos Ayudarte?</span>
         </a>
 
-
+    </div>
     </div>
     <!-- ******************** FIN CODIGO ******************** -->
     <footer>
