@@ -13,6 +13,14 @@
     z-index: 100;
 }
 
+.float:hover {
+    /* -webkit-box-shadow: inset 2px 2px 2px 2px #1C6EA4, inset 11px 11px 2px 0px #2285C7, inset 20px 20px 2px 1px #289DEA, inset 29px 29px 2px 1px #57BBEA, 5px 3px 21px 37px rgba(37, 67, 130, 0);
+    box-shadow: inset 2px 2px 2px 2px #1C6EA4, inset 11px 11px 2px 0px #2285C7, inset 20px 20px 2px 1px #289DEA, inset 29px 29px 2px 1px #57BBEA, 5px 3px 21px 37px rgba(37, 67, 130, 0); */
+    -webkit-box-shadow: inset 2px 2px 2px 2px #1C6EA4, inset 11px 11px 2px 0px #2285C7, inset 20px 20px 2px 1px #289DEA, inset 29px 29px 2px 1px #57BBEA, -2px -19px 9px -9px rgba(37, 67, 130, 0.23);
+    box-shadow: inset 2px 2px 2px 2px #1C6EA4, inset 11px 11px 2px 0px #2285C7, inset 20px 20px 2px 1px #289DEA, inset 29px 29px 2px 1px #57BBEA, -2px -19px 9px -9px rgba(37, 67, 130, 0.23);
+    /* desde aque */
+}
+
 .suba {
     margin-top: 12px;
     height: 30px;
@@ -20,15 +28,18 @@
     color: #ffffff;
 }
 
-.my-float:hover {
+
+/* .my-float:hover {
     margin-top: 16px;
     color: #ffffff;
-}
+    background-color: #254382;
+} */
 
 .float:hover .my-btn {
     display: block !important;
     position: absolute !important;
     top: 0%;
+    background-color: #254382;
 }
 
 .my-btn {
