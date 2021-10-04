@@ -97,6 +97,9 @@ header {
     order: -2;
   }
 }
+.topbar{
+    --bs-gutter-x: 0 !important;
+}
 
 .navbar {
   background-color: #254382;
