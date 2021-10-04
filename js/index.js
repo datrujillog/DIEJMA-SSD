@@ -105,7 +105,7 @@ const countdwn = (deadline, elem, finalMessage) => {
 
 };
 
-countdwn('Sep 30 2021 17:10:00 GMT-0500', 'clock',
+countdwn('Oct 31 2021 17:10:00 GMT-0500', 'clock',
     'Feliz 2021');
 
 // style="background-color: rgba(0, 0, 0, 0.4); width: 100px; height: 100px;  border-radius: 50px; !import"

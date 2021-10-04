@@ -129,7 +129,7 @@ header {
         font-weight: 900;
     }
     .eee:hover {
-        background-color: $color-cuarto;
+        background-color: $color-cuarto !important;
         // height: 50px;
         border-radius: 15px;
         width: 100%;
@@ -145,7 +145,8 @@ header {
         color: $color-primero !important;
         font-weight: 900;
         text-align: center;
-        color: $color-cuarto !important;
+        // color: $color-cuarto !important;
+        color: $color-segundo !important;
     }
     .sub-lista {
         background-color: $color-quinto;

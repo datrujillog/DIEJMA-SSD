@@ -4,7 +4,6 @@
   right: 50px;
   top: 1000px;
 }
-
 .btn-subir .bbb {
   height: 55px;
   width: 55px;
@@ -14,13 +13,10 @@
   background-color: #d9a138;
   color: #ebebeb;
 }
-
 .btn-subir .bbb:hover {
   background-color: #254382;
-  -webkit-animation: icono 0.5s ease;
   animation: icono 0.5s ease;
 }
-
 .btn-subir .ir-arriba {
   display: none;
   padding: 20px;
@@ -63,85 +59,69 @@
 
 /*Aquí debajo va el FOOTER*/
 footer {
-  margin-top: 500px;
+  margin-top: 100px;
   width: 100%;
   padding: 50px 0px;
   background-image: url(/Img/Footer/background-footer.svg);
   background-size: cover;
 }
-
 footer a {
   text-decoration: none;
 }
-
 footer .iconos {
   color: #d9a138;
 }
-
 footer .face {
   color: #254382;
 }
-
 footer .faceboo:hover {
   color: #254382 !important;
   font-weight: 900;
   text-decoration: overline !important;
 }
-
 footer .faceboo {
   font-weight: 900 !important;
   color: #254382 !important;
 }
-
 footer .twitter {
   color: #1d9bf0 !important;
 }
-
 footer .twitterr:hover {
   color: #1d9bf0 !important;
   text-decoration: overline !important;
 }
-
 footer .twitterr {
   color: #1d9bf0 !important;
   font-weight: 900 !important;
 }
-
 footer .linkedin {
   color: #0b66c2;
 }
-
 footer .linkedinn:hover {
   color: #0b66c2 !important;
   font-weight: 900 !important;
   text-decoration: overline !important;
 }
-
 footer .linkedinn {
   color: #0b66c2 !important;
   font-weight: 900 !important;
 }
-
 footer .whatsapp {
   color: #49c456;
 }
-
 footer .whatsappp:hover {
   color: #49c456 !important;
   font-weight: 900 !important;
   text-decoration: overline !important;
 }
-
 footer .whatsappp {
   color: #49c456 !important;
   font-weight: 900 !important;
 }
-
 footer .instagran {
   font-weight: 900 !important;
   color: #b43aa0 !important;
 }
-
 footer .instagran:hover {
   font-weight: 900 !important;
   text-decoration: overline !important;
@@ -216,7 +196,5 @@ footer .instagran:hover {
 footer .box__footer a:hover {
   text-decoration: line-through;
 }
-
-/*# sourceMappingURL=footer.css.map */
 
 /*# sourceMappingURL=footer.css.map */
