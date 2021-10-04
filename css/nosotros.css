@@ -35,13 +35,14 @@ h3{
 /* Cajas */
 .section-caja-box{
     margin-bottom: 20px;
+    
 }
 
 .card-text{
     color: black;
 }
 
-#first-card, #second-card, #third-card{
+.section-caja-box-border{
     border: 2px dashed #254382;
 }
 
