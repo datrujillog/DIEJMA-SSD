@@ -359,6 +359,11 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .container__card {
+    display: none;
+  }
+}
 
 .card__father {
   margin: 20px;
@@ -494,6 +499,18 @@ body {
   color: red;
   font-size: 35px;
   font-family: "Gluten", cursive;
+}
+@media only screen and (max-width: 700px) {
+  .clockcont {
+    padding-top: 50px !important;
+  }
+  .clockcont .clockh1 {
+    line-height: 0.8;
+  }
+  .clockcont .proxi {
+    line-height: 0.8;
+    margin-bottom: -10px;
+  }
 }
 
 .movil {
