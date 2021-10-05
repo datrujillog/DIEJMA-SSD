@@ -733,3 +733,49 @@ body {
         text-align: center !important;
     }
 }
+
+.contenedor-off {
+    background: $color-quinto;
+    // background-color: lightcyan;
+    height: 433px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    h1 {
+        font-size: 27px;
+        color: $color-primero;
+    }
+    p {
+        color: rgb(172, 165, 165);
+    }
+    .conenedor-off-uno {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 291px;
+        background-color: $color-segundo;
+        margin-right: 20px;
+        img {
+            height: 250px;
+        }
+        h4 {
+            color: red;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    .conenedor-off-dos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 291px;
+        background-color: $color-segundo;
+        margin-right: 20px;
+        img {
+            height: 250px;
+        }
+        h4 {
+            color: red;
+            font-size: 20px;
+        }
+    }
+}
