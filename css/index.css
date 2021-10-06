@@ -568,11 +568,14 @@ body {
   background: #ebebeb;
   height: 433px;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
 }
 .contenedor-off h1 {
-  font-size: 27px;
+  font-size: 25px;
   color: #464646;
+  font-family: "Roboto", sans-serif;
 }
 .contenedor-off p {
   color: #aca5a5;
@@ -580,6 +583,7 @@ body {
 .contenedor-off .conenedor-off-uno {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   height: 291px;
   background-color: #F3F3F3;
@@ -596,6 +600,7 @@ body {
 .contenedor-off .conenedor-off-dos {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   height: 291px;
   background-color: #F3F3F3;
@@ -607,6 +612,22 @@ body {
 .contenedor-off .conenedor-off-dos h4 {
   color: red;
   font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 570px) {
+  .contenedor-off .conenedor-off-uno {
+    width: 100%;
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+  .contenedor-off .conenedor-off-dos {
+    width: 100%;
+  }
+}
+
+.view {
+  margin-right: 130px;
+  text-align: end;
 }
 
 /*# sourceMappingURL=index.css.map */

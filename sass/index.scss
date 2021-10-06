@@ -739,10 +739,13 @@ body {
     // background-color: lightcyan;
     height: 433px;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     font-family: 'Roboto', sans-serif;
     h1 {
-        font-size: 27px;
+        font-size: 25px;
         color: $color-primero;
+        font-family: 'Roboto', sans-serif;
     }
     p {
         color: rgb(172, 165, 165);
@@ -750,6 +753,7 @@ body {
     .conenedor-off-uno {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         height: 291px;
         background-color: $color-segundo;
@@ -766,6 +770,7 @@ body {
     .conenedor-off-dos {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         height: 291px;
         background-color: $color-segundo;
@@ -776,6 +781,22 @@ body {
         h4 {
             color: red;
             font-size: 20px;
+            font-family: 'Roboto', sans-serif;
         }
     }
+    @media (max-width: 570px) {
+        .conenedor-off-uno {
+            width: 100%;
+            margin-right: 20px;
+            margin-top: 100px;
+        }
+        .conenedor-off-dos {
+            width: 100%;
+        }
+    }
+}
+
+.view {
+    margin-right: 130px;
+    text-align: end;
 }
