@@ -111,37 +111,90 @@
                             <div class="contac2 ">
 
                                 <!-- ******************** MODAL CARRITO ******************** -->
+                                <!-- ******************** MODAL CARRITO ******************** -->
                                 <!-- btn-danger -->
-                                <button type="button " class="btn btn-carrito " data-bs-toggle="modal " data-bs-target="#exampleModal " data-bs-whatever="@mdo "><i class="bi bi-cart-check-fill " aria-hidden="true "></i> 
-                            </button>
+
+                                <!-- <button type="button" class="btn btn-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="bi bi-person-fill"></i> </button> -->
 
 
-                                <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-                                    <div class="modal-dialog ">
-                                        <div class="modal-content ">
-                                            <div class="modal-header ">
-                                                <h5 class="modal-title " id="exampleModalLabel ">New message</h5>
-                                                <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+
+
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Inicio de sesiòn</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body ">
+                                            <div class="modal-body">
                                                 <form>
-                                                    <div class="mb-3 ">
-                                                        <label for="recipient-name " class="col-form-label ">Recipient:</label>
-                                                        <input type="text " class="form-control " id="recipient-name ">
-                                                    </div>
-                                                    <div class="mb-3 ">
-                                                        <label for="message-text " class="col-form-label ">Message:</label>
-                                                        <textarea class="form-control " id="message-text "></textarea>
+                                                    <div class="container-fliud">
+                                                        <div class="mb-3">
+                                                            <label for="recipient-name" class="col-form-label">Usuario:</label>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+                                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Contaseña:</label>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                                <input type="text" class="form-control" placeholder="Contaseña" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </form>
                                             </div>
-                                            <div class="modal-footer ">
-                                                <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
-                                                <button type="button " class="btn btn-primary ">Send message</button>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Send message</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- desde aqui -->
+                                <!-- <i class="bi bi-cart-check-fill " aria-hidden="true "></i>  -->
+
+                                <button type="button" class="btn btn-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="bi bi-person-fill"></i></button>
+
+                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centent">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalToggleLabel">Carrito de Compras</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Show a second modal and hide this one with the button below.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Comprar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalToggleLabel2">Carrito de Compras</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Hide this modal and show the first with the button below.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <a class="btn btn-carrito" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="bi bi-cart-check-fill " aria-hidden="true "></i></a>
+
+
+
+                                <!-- ******************** FIN CODIGO ******************** -->
                                 <!-- ******************** FIN CODIGO ******************** -->
 
                             </div>
@@ -324,7 +377,7 @@
                         </div>
 
                         <div class="col-md section-caja-box">
-                            <div  class= "text-light section-caja-box-border">
+                            <div class="text-light section-caja-box-border">
                                 <div class="card-body text-center">
                                     <div class="h1 my-1">
                                         <i class="bi bi-award text-primary"></i>

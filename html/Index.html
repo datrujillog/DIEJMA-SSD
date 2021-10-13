@@ -110,36 +110,87 @@ Author URL: https://devtrujillo.herokuapp.com
 
                                 <!-- ******************** MODAL CARRITO ******************** -->
                                 <!-- btn-danger -->
-                                <button type="button " class="btn btn-carrito " data-bs-toggle="modal " data-bs-target="#exampleModal " data-bs-whatever="@mdo "><i class="bi bi-cart-check-fill " aria-hidden="true "></i> 
-                            </button>
+
+                                <!-- <button type="button" class="btn btn-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="bi bi-person-fill"></i> </button> -->
 
 
-                                <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-                                    <div class="modal-dialog ">
-                                        <div class="modal-content ">
-                                            <div class="modal-header ">
-                                                <h5 class="modal-title " id="exampleModalLabel ">New message</h5>
-                                                <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+
+
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Inicio de sesiòn</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body ">
+                                            <div class="modal-body">
                                                 <form>
-                                                    <div class="mb-3 ">
-                                                        <label for="recipient-name " class="col-form-label ">Recipient:</label>
-                                                        <input type="text " class="form-control " id="recipient-name ">
-                                                    </div>
-                                                    <div class="mb-3 ">
-                                                        <label for="message-text " class="col-form-label ">Message:</label>
-                                                        <textarea class="form-control " id="message-text "></textarea>
+                                                    <div class="container-fliud">
+                                                        <div class="mb-3">
+                                                            <label for="recipient-name" class="col-form-label">Usuario:</label>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+                                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Contaseña:</label>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                                <input type="text" class="form-control" placeholder="Contaseña" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </form>
                                             </div>
-                                            <div class="modal-footer ">
-                                                <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
-                                                <button type="button " class="btn btn-primary ">Send message</button>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Send message</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- desde aqui -->
+                                <!-- <i class="bi bi-cart-check-fill " aria-hidden="true "></i>  -->
+
+                                <button type="button" class="btn btn-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="bi bi-person-fill"></i></button>
+
+                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centent">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalToggleLabel">Carrito de Compras</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Show a second modal and hide this one with the button below.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Comprar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalToggleLabel2">Carrito de Compras</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Hide this modal and show the first with the button below.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <a class="btn btn-carrito" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="bi bi-cart-check-fill " aria-hidden="true "></i></a>
+
+
+
                                 <!-- ******************** FIN CODIGO ******************** -->
 
                             </div>
@@ -338,8 +389,8 @@ Author URL: https://devtrujillo.herokuapp.com
 
     <!-- ******************** Portafolio productos Destacados ******************** -->
 
-    <div class="contenedor" style="padding-left: 7%;">
-        <div class="container">
+    <div class="contenedor " style="padding-left: 7%;">
+        <div class="container " style="margin-bottom: 80px;">
             <div class="row">
                 <header>
                     <div class="bus">
@@ -361,13 +412,17 @@ Author URL: https://devtrujillo.herokuapp.com
                         <h3 class="animated infinite pulse delay-2s ">Productos Destacados</h3>
                     </h3>
                     <!-- ******************** ver carro******************** -->
-                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-                    </form>
+                    <!-- ******************** ver carro******************** -->
+                    <div class="view">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
 
+                    <!-- ******************** FIN CODIGO ******************** -->
 
                     <!-- ******************** FIN CODIGO ******************** -->
                 </div>
@@ -376,36 +431,30 @@ Author URL: https://devtrujillo.herokuapp.com
                 <section class="grid" id="grid">
 
 
-                    <!-- ===== MODA ======= -->
-                    <div class="col-xl-3 item " data-aos="fade-up" data-categoria="moda" data-etiquetas="moda,Moda, ropa,Ropa sandalias,Sandalias zapatos,Zapatos,Tacones, tacones" data-descripcion="1.- Lorem ipsum dolor sit amet consectetur.">
+                    <!-- =========== DEPORTES ===============  ya-->
+                    <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="deportes" data-etiquetas="deportes Deportes Monopatin, monopatin, patinetas,Patinetas" data-descripcion="Monopatin Patineta Scooter Para Niño Y Niña Ruedas Con Luces..">
                         <div class="item-contenido">
-
                             <div class="card" style="width: 18rem;">
-                                <img class="imgventas " src="/Img/moda/f2.png" class="card-img-top" alt="...">
+                                <img class="imgventas " src="/Img/Productos/Portafolio/Moda/monopatin.png" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Sandalia de mujer</h5>
-                                    <p class="card-text">Some quick example text to build on the card.</p>
-                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$200,00</span> <span class=" addnumero   animated infinite pulse delay-2s animatea "></p>
-                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$129,00 USD</h5>
-                                    <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
-                                    
-                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                                        <input type="hidden" name="cmd" value="_s-xclick">
-                                        <input type="hidden" name="hosted_button_id" value="H94T86MFZY99A">
-                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                    <h5 class="card-title text-center">Monopatin Patineta </h5>
+                                    <p class="card-text">Monopatin Patineta Scooter Para Niño Y Niña Ruedas Con Luces.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$200,00 USD </span>
+                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$152,80 USD</h5>
+                                        <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="M27X6BVURJSRE">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
                                         </form>
-                                        
-                                        
+
                                 </div>
                             </div>
-
-
-
-                            <!-- <img src="../Img/portafolio/ciudad1.png" alt=""> -->
+                            <!-- <img class="imgventas " src="/Img/ProductosDestacados/s5.png" alt=""> -->
                         </div>
                     </div>
-                    <!-- =================== -->
+                    <!-- ================= -->
 
                     <!-- ====== DEPORTE ======== -->
 
@@ -489,7 +538,7 @@ Author URL: https://devtrujillo.herokuapp.com
                             </div>
                         </div>
                     </div>
-<!-- =================== -->
+                    <!-- =================== -->
 
 
                     <!-- ======= Hogar========  -->
@@ -500,14 +549,22 @@ Author URL: https://devtrujillo.herokuapp.com
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Plantas Y Jarrones</h5>
                                     <p class="card-text">Some quick example text to build on the card.</p>
-                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$40.000,00 </span>
-                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$25.000,00</h5>
-                                        <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> </div>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$55,70 USD</span>
+                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$45,70 USD</h5>
+                                        <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="QQ6XN4LUKVZRS">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+                                </div>
                             </div>
 
                             <!-- <img src="/Img/portafolio/animal1.png" alt=""> -->
                         </div>
                     </div>
+
                     <!-- ======= Hogar========  -->
                     <div data-aos="fade-up" data-aos-duration="5000" class="item col-xs-6" data-categoria="hogar" data-etiquetas="Reloj,reloj de pared Reloj de pared" data-descripcion="5.- Lorem ipsum dolor sit amet consectetur.">
                         <div class="item-contenido">
@@ -516,13 +573,13 @@ Author URL: https://devtrujillo.herokuapp.com
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Reloj De Pared</h5>
                                     <p class="card-text">Some quick example text to build on the card.</p>
-                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$480.000,00 </span>
-                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$350.000,00</h5>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$358,00 USD<</span>
+                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$248,00 USD</h5>
                                         <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
                                         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                                             <input type="hidden" name="cmd" value="_s-xclick">
-                                            <input type="hidden" name="hosted_button_id" value="4WVQMSRBAL3BQ">
-                                            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <input type="hidden" name="hosted_button_id" value="HGAHJQVAZHDHN">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                                             <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
                                         </form>
 
@@ -532,7 +589,9 @@ Author URL: https://devtrujillo.herokuapp.com
                             <!-- <img src="/img/portafolio/animal2.png" alt=""> -->
                         </div>
                     </div>
+
                     <!-- =========== DEPORTES =============== -->
+                    <!-- =========== DEPORTES YA =============== -->
                     <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="deportes" data-etiquetas="deportes Deportes balones futbol Fùtbol fùtbol pelota Pelota Americano americano futbol Americano Balon de futbal balon de futbol" data-descripcion="6.- Lorem ipsum dolor sit amet consectetur.">
                         <div class="item-contenido">
                             <div class="card" style="width: 18rem;">
@@ -540,9 +599,16 @@ Author URL: https://devtrujillo.herokuapp.com
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-center">Fùtbol Americano</h5>
                                     <p class="card-text">Some quick example text to build on the card.</p>
-                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$180.000,00 </span>
-                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$140.000,00</h5>
-                                        <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$288,50 USD </span>
+                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$188,50 USD</h5>
+                                        <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="JNTJ922BDVDWC">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+
                                 </div>
                             </div>
                             <!-- <img class="imgventas " src="/Img/ProductosDestacados/s5.png" alt=""> -->
@@ -550,33 +616,48 @@ Author URL: https://devtrujillo.herokuapp.com
                     </div>
                     <!-- ================= -->
                     <!-- ============ Decoración del hogar =========== -->
+                    <!-- ============ Decoración del hogar YA =========== -->
                     <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="hogar" data-etiquetas="Decoración, Hogar hogar cama, camas,Cama Cama De matrimonio Matrimonio" data-descripcion="7.- Lorem ipsum dolor sit amet consectetur.">
                         <div class="item-contenido">
                             <div class="card" style="width: 18rem;">
                                 <img class="imgventas " src="/Img/ProductosDestacados/h3.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Cama De Matrimonio</h5>
-                                    <p class="card-text">Some quick example text to build on the card.</p>
-                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$8.000.000,00 </span>
-                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$6.800.405,99</h5>
-                                        <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-center">Mini Cama De Matrimonio </h5>
+                                    <p class="card-text">Mini Cama De Matrimonio A Escala De 1:12 Con Colchón Y.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$586,00 USD </span>
+                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$486,00 USD</h5>
+                                        <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="FFSC2NA6QZYX2">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+
                                 </div>
                             </div>
                             <!-- <img src="/img/portafolio/paisaje2.png" alt=""> -->
                         </div>
                     </div>
                     <!-- ============================ -->
-                    <!-- ===== MODA ======= -->
+
+                    <!-- ===== MODA =======  YA -->
                     <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="moda" data-etiquetas="moda, Moda,Ropa vestido, ropa Vestido de fiesta Fiesta" data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
                         <div class="item-contenido">
                             <div class="card" style="width: 18rem;">
                                 <img class="imgventas " src="/Img/moda/f4.png" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">vestido de fiesta</h5>
-                                    <p class="card-text">Some quick example text to build on the card.</p>
-                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$480.000,00 </span>
-                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$356.458,99</h5>
-                                        <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                    <h5 class="card-title">Vestido Stylish</h5>
+                                    <p class="card-text">Vestido Stylish Accessories 50s 60s Rockabilly Swing Fiesta.</p>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$526,50 USD </span>
+                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$426,50 USD</h5>
+                                        <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="DKX57PS68RAYJ">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
                                 </div>
                             </div>
                             <!-- <img src="/Img/portafolio/ciudad2.png" alt=""> -->
@@ -584,44 +665,59 @@ Author URL: https://devtrujillo.herokuapp.com
                     </div>
 
                     <!-- =========== DEPORTES =============== -->
-                    <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="deportes" data-etiquetas="deportes Deportes balones futbol Fùtbol fùtbol pelota Pelota Americano americano futbol Americano Balon de futbal balon de futbol" data-descripcion="6.- Lorem ipsum dolor sit amet consectetur.">
-                        <div class="item-contenido">
-                            <div class="card" style="width: 18rem;">
-                                <img class="imgventas " src="/Img/ProductosDestacados/s2.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-center">Fùtbol Americano</h5>
-                                    <p class="card-text">Some quick example text to build on the card.</p>
-                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$180.000,00 </span>
-                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$140.000,00</h5>
-                                        <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
-                                </div>
+                    <!-- ======= Electronica YA  -->
+                    <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="electronica" data-etiquetas="electronica Electronica Televisor Plasma televisor plasma" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
+                        <div class="card" style="width: 18rem;">
+                            <h6 style="color: red; text-decoration:underline;">Nuevo</h6>
+                            <img class="imgventas " style="width: 60%;" src="/Img/Productos/Portafolio/Moda/tv.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center ">
+                                <h5 class="card-title">Smart TV LG</h5>
+                                <p class="card-text">Smart TV LG AI ThinQ 49UN7300PDC LED 4K 49" 100V/240V.</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$3.000,51 USD</span>
+                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$2.257,51 USD</h5>
+                                    <!-- <a href="#" class="btn btn-primary addCarrd t"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="E7YDAPST4GZPS">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                    </form>
+
                             </div>
-                            <!-- <img class="imgventas " src="/Img/ProductosDestacados/s5.png" alt=""> -->
                         </div>
+                        <!-- <div class="item-contenido">
+                    <img src="/Img/ProductosDestacados/5.jpg" alt="">
+                 </div -->
                     </div>
-                    <!-- ================= -->
 
 
-                    <!-- ============ Decoración del hogar =========== -->
+                    <!-- ============ Decoración del hogar YA =========== -->
                     <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="hogar" data-etiquetas="Decoración, del hogar Hogar Soplador De Nieve nieve soplador De Nieve" data-descripcion="7.- Lorem ipsum dolor sit amet consectetur.">
                         <div class="item-contenido">
-
                             <div class="card" style="width: 18rem;">
                                 <img class="imgventas " src="/Img/ProductosDestacados/h5.png" class="card-img-top" alt="...">
-                                <div class="card-body">
+                                <div class="card-body text-center">
                                     <h5 class="card-title text-center">Soplador De Nieve</h5>
                                     <p class="card-text">Some quick example text to build on the card.</p>
-                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$4.000.000,00 </span>
-                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$2.785.964,99</h5>
-                                        <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                    <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$320,63 USD </span>
+                                        <h5 class="animated infinite pulse delay-2s animatea addnumero">$220,63 USD</h5>
+                                        <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="RP2ES8A9EUR6Q">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+
                                 </div>
                             </div>
                             <!-- <img src="/img/portafolio/paisaje2.png" alt=""> -->
                         </div>
                     </div>
                     <!-- ============================ -->
+                    <!-- ============================ -->
 
-                    <!-- ====== DEPORTE ======== -->
+                    <!-- ====== DEPORTE ========  YA -->
                     <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="deportes" data-etiquetas="deportes Deportes patines ,kit Kit, cricket Kit de cricket Kit De Cricket" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
                         <div class="item-contenido">
 
@@ -632,7 +728,13 @@ Author URL: https://devtrujillo.herokuapp.com
                                     <p class="card-text">Some quick example text to build on the card.</p>
                                     <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$800.000,00 </span>
                                         <h5 class="animated infinite pulse delay-2s animatea addnumero">$500.000,00</h5>
-                                        <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                        <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="L9WLDNQKJVDM8">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
                                 </div>
                             </div>
 
@@ -640,55 +742,77 @@ Author URL: https://devtrujillo.herokuapp.com
                         </div>
                     </div>
                     <!-- ==================== -->
+                    <!-- ==================== -->
                     <!-- celulares ============================================= -->
 
 
-                    <!-- ======= Electronica  -->
-                    <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="electronica" data-etiquetas="celular iphone Celular iphone electronica Electronica Celulares celulares" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
-
+                    <!-- ======= Electronica  YA -->
+                    <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="electronica" data-etiquetas="electronica Electronica celulares samsung Celular Samsung" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
                         <div class="card" style="width: 18rem;">
+                            <h6 style="color: red; text-decoration:underline;">Nuevo</h6>
                             <img class="imgventas " src="/Img/ProductosDestacados/2.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
-                                <h5 class="card-title"> Celular iphone</h5>
-                                <p class="card-text">Some quick example text to build on the card.</p>
-                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$1.00.000,00 </span>
-                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$999.999,99</h5>
-                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                <h5 class="card-title text-center">Apple iPhone</h5>
+                                <p class="card-text">Apple iPhone 11 (128 GB) - Blanco.</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$2.133,72 USD </span>
+                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$1.185,72 USD</h5>
+                                    <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="U7SQE2NDWCQL8">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                    </form>
                             </div>
                         </div>
                     </div>
 
+
+
                     <!-- ======= Electronica  -->
+                    <!-- ======= Electronica  YA -->
                     <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="electronica" data-etiquetas="electronica Electronica celulares samsung Celular Samsung" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
-
                         <div class="card" style="width: 18rem;">
+                            <h6 style="color: red; text-decoration:underline;">Nuevo</h6>
                             <img class="imgventas " src="/Img/ProductosDestacados/2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Celular Samsung</h5>
-                                <p class="card-text">Some quick example text to build on the card.</p>
-                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$180.000,00 </span>
-                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$150.000,22</h5>
-                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-center">Apple Samsung</h5>
+                                <p class="card-text">Apple iPhone 11 (128 GB) - Blanco.</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$2.133,72 USD </span>
+                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$1.185,72 USD</h5>
+                                    <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="U7SQE2NDWCQL8">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                    </form>
                             </div>
                         </div>
                     </div>
-
-                    <!-- ======= Electronica  -->
+                    <!-- ======= Electronica YA  -->
 
                     <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="electronica" data-etiquetas="electronica Electronica impresora laser Impresora laser  Impresora Laser IMPRESORA Laser laser" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
-
                         <div class="card" style="width: 18rem;">
                             <img class="imgventas " src="/Img/ProductosDestacados/inpresora.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Impresora</h5>
-                                <p class="card-text">Some quick example text to build on the card .</p>
-                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$2.00.000,00 </span>
-                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$1.666.884,99</h5>
-                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                <h5 class="card-title">Impresora a color multifunción</h5>
+                                <p class="card-text">Impresora a color multifunción Epson EcoTank L3110 negra 110V.</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$890,72 USD</span>
+                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$828,72 USD</h5>
+                                    <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="S47DNBBQ4X75C">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                    </form>
                             </div>
                         </div>
                     </div>
-                    <!-- ======= Electronica  -->
+
+
+                    <!-- ======= Electronica YA -->
                     <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="electronica" data-etiquetas=" Electronica Play, play electronica control, Control De Videojuegos control de videojuegos" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
                         <div class="card" style="width: 18rem;">
                             <img class="imgventas " src="/Img/ProductosDestacados/pic5.jpg" class="card-img-top" alt="...">
@@ -697,46 +821,63 @@ Author URL: https://devtrujillo.herokuapp.com
                                 <h5 class="card-title">Control De Videojuegos</h5>
                                 <p class="card-text">Mando Inalámbrico 2.4g Ps2/ps3/pc Amarillo 69900 pesos
                                 </p>
-                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$180.000,00 </span>
-                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$166.569,99</h5>
-                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$150,72 USD </span>
+                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$114,72 USD</h5>
+                                    <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="4PNN4DD56YD9E">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                    </form>
                             </div>
                         </div>
 
 
                     </div>
 
-                    <!-- ======= Electronica  -->
-                    <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="electronica" data-etiquetas="electronica Electronica Computador,Portatil, Lapto computador lapto portatil" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
 
+                    <!-- ======= Electronica  YA -->
+                    <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="electronica" data-etiquetas="electronica Electronica Computador,Portatil, Lapto computador lapto portatil" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
                         <div class="card" style="width: 18rem;">
                             <img class="imgventas " src="/Img/ProductosDestacados/Computador-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Portatil</h5>
-                                <p class="card-text">Some quick example text to build on the card .</p>
-                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$5.589.545,99 </span>
-                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$4.125.548,88</h5>
-                                    <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a>
+                                <h5 class="card-title">portatil Hp </h5>
+                                <p class="card-text">Portatil Hp 245 G7 Amd 3020e 8gb 1tb 14 PuLG Radeon Vega 8.</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$100,00 USD </span>
+                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$843,00 USD</h5>
+                                    <!-- <a href="#" class="btn btn-primary addCarrd"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="TWCAHFQYJSQFQ">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                    </form>
                             </div>
                         </div>
-
-
                         <!-- <div class="item-contenido">
-                        <img src="/Img/ProductosDestacados/4.jpg" alt="">
-                    </div> -->
+                    <img src="/Img/ProductosDestacados/4.jpg" alt="">
+                </div> -->
                     </div>
 
 
-                    <!-- ======= Electronica  -->
+                    <!-- ======= Electronica YA  -->
                     <div data-aos="fade-up" data-aos-duration="5000" class="item" data-categoria="electronica" data-etiquetas="electronica Electronica Camaras camaras" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur">
                         <div class="card" style="width: 18rem;">
                             <img class="imgventas " style="width: 60%;" src="/Img/ProductosDestacados/Camara.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center ">
-                                <h5 class="card-title">Camara</h5>
-                                <p class="card-text">Some quick example text to build on the card.</p>
-                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$550.000,00 </span>
-                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$366.862,99</h5>
-                                    <a href="#" class="btn btn-primary addCarrd t"><i class="bi bi-cart-check"></i> add to cart</a>
+                                <h5 class="card-title">Canon EOS</h5>
+                                <p class="card-text">Canon EOS Kit 80D + lente 18-135mm f/3.5-5.6 IS USM DSLR color negro.</p>
+                                <p><span style="color:rgba(70, 70, 70,0.50); text-decoration:line-through;">$143,65 USD </span>
+                                    <h5 class="animated infinite pulse delay-2s animatea addnumero">$843,65 USD</h5>
+                                    <!-- <a href="#" class="btn btn-primary addCarrd t"><i class="bi bi-cart-check"></i> add to cart</a> -->
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="3GPE4KZBWKPM4">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                    </form>
+
                             </div>
                         </div>
 
@@ -744,9 +885,10 @@ Author URL: https://devtrujillo.herokuapp.com
 
 
                         <!-- <div class="item-contenido">
-                        <img src="/Img/ProductosDestacados/5.jpg" alt="">
-                    </div> -->
+                    <img src="/Img/ProductosDestacados/5.jpg" alt="">
+                </div> -->
                     </div>
+
 
                     <!-- Fin  Celulares ======================================-->
 
@@ -880,7 +1022,7 @@ Author URL: https://devtrujillo.herokuapp.com
         </div>
 
     </main> -->
-
+    <!-- ******************** TOP DE TENDENCIAS  ******************** -->
 
     <main>
 
@@ -1157,6 +1299,7 @@ Author URL: https://devtrujillo.herokuapp.com
 
     <!-- Espacio para  JavaScript -->
     <script src="/js/suba.js"></script>
+    <script src=""></script>
 
     <!--  -->
     <!--  -->
